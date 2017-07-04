@@ -147,7 +147,7 @@ def get_image_title(case_number):
         logger.error(u"系统抛出异常:%s" % str(e))
 
 
-if __name__ =="__main__":
+if __name__ == "__main__":
 
     print get_test_data(xml_list[0], 05, "username")
     '''

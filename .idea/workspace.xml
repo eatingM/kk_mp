@@ -68,6 +68,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="browser_driver.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mp/test_model/models/browser_driver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="source_manage_page.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mp/test_model/page_obj/source_manage_page.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -80,45 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menulist_page.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mp/test_model/page_obj/menulist_page.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="e#33#79#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base_function.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mp/test_model/models/base_function.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="32" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
-              <folding>
-                <element signature="e#33#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="browser_driver.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mp/test_model/models/browser_driver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page_function.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="page_function.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mp/test_model/page_obj/page_function.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42825112">
-              <caret line="143" column="26" selection-start-line="143" selection-start-column="26" selection-end-line="143" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="149" column="26" selection-start-line="149" selection-start-column="26" selection-end-line="149" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -128,10 +104,32 @@
         <entry file="file://$PROJECT_DIR$/mp/test_model/page_obj/loginPage.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="47" selection-start-line="72" selection-start-column="8" selection-end-line="73" selection-end-column="47" />
+              <caret line="73" column="47" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="47" />
               <folding>
                 <element signature="e#33#79#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="source_manage_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mp/test_model/test_case/source_manage_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+              <folding>
+                <element signature="e#33#79#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_test_mp.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mp/run_test_mp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.77468354">
+              <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -227,18 +225,18 @@
         <option value="$PROJECT_DIR$/mp/test_model/models/logger.py" />
         <option value="$PROJECT_DIR$/mp/test_model/test_case/login_test.py" />
         <option value="$PROJECT_DIR$/mp/test_model/models/my_logger.py" />
-        <option value="$PROJECT_DIR$/mp/run_test_mp.py" />
         <option value="$PROJECT_DIR$/mp/test_model/test_case/main_page_menu_forward_test.py" />
-        <option value="$PROJECT_DIR$/mp/test_model/test_case/source_manage_test.py" />
         <option value="$PROJECT_DIR$/mp/test_model/page_obj/menulist_page.py" />
         <option value="$PROJECT_DIR$/mp/test_model/page_obj/source_manage_page.py" />
         <option value="$PROJECT_DIR$/mp/test_model/models/base_function.py" />
         <option value="$PROJECT_DIR$/mp/test_model/models/browser_driver.py" />
         <option value="$PROJECT_DIR$/mp/test_model/models/my_unittest.py" />
         <option value="$PROJECT_DIR$/mp/test_model/page_obj/base_page.py" />
-        <option value="$PROJECT_DIR$/mp/test_model/page_obj/page_function.py" />
         <option value="$PROJECT_DIR$/mp/test_model/page_obj/loginPage.py" />
         <option value="$PROJECT_DIR$/mp/test_model/page_obj/main_page.py" />
+        <option value="$PROJECT_DIR$/mp/test_model/page_obj/page_function.py" />
+        <option value="$PROJECT_DIR$/mp/test_model/test_case/source_manage_test.py" />
+        <option value="$PROJECT_DIR$/mp/run_test_mp.py" />
       </list>
     </option>
   </component>
@@ -828,7 +826,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17574692" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18803419" sideWeight="0.7450832" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2752137" sideWeight="0.7450832" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24659607" sideWeight="0.24012157" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864675" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -1146,14 +1144,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mp/run_test_mp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mp/test_model/page_obj/unrecognized_feedback_page.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1180,32 +1170,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mp/test_model/test_case/source_manage_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="e#33#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mp/test_model/page_obj/menulist_page.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="e#33#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mp/test_model/page_obj/source_manage_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="e#34#80#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1252,16 +1222,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mp/test_model/page_obj/loginPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="47" selection-start-line="72" selection-start-column="8" selection-end-line="73" selection-end-column="47" />
-          <folding>
-            <element signature="e#33#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mp/test_model/page_obj/main_page.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1272,8 +1232,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mp/test_model/page_obj/page_function.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42825112">
-          <caret line="143" column="26" selection-start-line="143" selection-start-column="26" selection-end-line="143" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="149" column="26" selection-start-line="149" selection-start-column="26" selection-end-line="149" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mp/test_model/test_case/source_manage_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#33#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mp/test_model/page_obj/source_manage_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="e#34#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mp/test_model/page_obj/loginPage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="47" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="47" />
+          <folding>
+            <element signature="e#33#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mp/run_test_mp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77468354">
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
           <folding />
         </state>
       </provider>

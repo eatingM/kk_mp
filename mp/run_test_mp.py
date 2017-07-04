@@ -35,14 +35,14 @@ def send_mail(file_new):
     try:
         smtp = smtplib.SMTP()
         smtp.connect("smtp.163.com")
-        smtp.login("diqiuqq@163.com" , '4328031')
+        smtp.login("diqiuqq@163.com" , '')
         smtp.sendmail("diqiuqq@163.com", "maoyt@landray.com.cn", msg.as_string())
         smtp.quit()
         logger.info(u"发送邮件中：由 %s 发往 %s "%(sender, reciever))
         logger.info(u"邮件发送成功！")
     except Exception as e:
         logger.error(u"邮件发送失败！")
-        logger.error(str(e))
+        logger.error(u"系统抛出异常:%s" % str(e))
 
 
 def new_report(testreport_path):
