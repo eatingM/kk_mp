@@ -47,11 +47,11 @@ def read_xml(xml_file):
     try:
         dom = minidom.parse(xml_file)
         root = dom.documentElement
-        logger.info(u"打开%s文件读取..."% xml_file)
+        logger.info(u"打开%s文件读取..."%xml_file)
         return root
     except Exception as e:
-        logger.error(u"%s文件读取失败!"% xml_file)
-
+        logger.error(u"%s文件读取失败!"%xml_file)
+        logger.error(str(e))
 
 
 def get_test_number(test_number):

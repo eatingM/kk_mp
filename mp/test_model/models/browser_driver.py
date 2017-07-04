@@ -15,8 +15,9 @@ def set_param(browser):
     :param browser:
     :return:
     """
+    # original host host = 'http://127.0.0.1:5555/wd/hub'
     try:
-        host = 'http://127.0.0.1:5555/wd/hub'
+        host = 'http://192.168.2.110:5555/wd/hub'
         driver = Remote(command_executor=host,
                      desired_capabilities={'platform':'ANY',
                                            'browserName':browser,

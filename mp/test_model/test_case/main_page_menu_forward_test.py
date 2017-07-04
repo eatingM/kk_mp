@@ -69,7 +69,7 @@ class MainPageForwardTest(MyTest):
         expected_value = get_expected_value("016")
         title = get_image_title("016")
         self.assertEqual(UnrecognizedFeedbackMenu(self.driver).get_mp_unrecognized_manage_text(), expected_value)
-        logger.info(u"测试判断:%s 是否等于:%s" %(UnrecognizedFeedbackMenu(self.driver).get_mp_unrecognized_manage_text(), expected_value))
+        logger.info(u"测试判断:%s 是否等于:%s" % (UnrecognizedFeedbackMenu(self.driver).get_mp_unrecognized_manage_text(), expected_value))
         insert_img(self.driver, title)
 '''
 @author Mavis

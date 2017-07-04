@@ -932,3 +932,1741 @@
 2017-07-03 16:40:00,736 -main.run_test_mp- [file:run_test_mp.py]-[func:<module>][line:84] - INFO: 开始执行...
 2017-07-03 16:40:02,638 -main.run_test_mp- [file:run_test_mp.py]-[func:send_mail][line:41] - INFO: 发送邮件中：由 eating<diqiuqq@163.com> 发往 maoyt@landray.com.cn 
 2017-07-03 16:40:02,638 -main.run_test_mp- [file:run_test_mp.py]-[func:send_mail][line:42] - INFO: 邮件发送成功！
+2017-07-04 11:30:02,938 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:30] - ERROR: 主机配置失败！Selenium Server未启动！
+2017-07-04 11:30:02,940 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:31] - ERROR: Message: The driver executable does not exist: d:\Users\Administrator\Desktop\chromedriver.exe
+Stacktrace:
+    at com.google.common.base.Preconditions.checkState (Preconditions.java:197)
+    at org.openqa.selenium.remote.service.DriverService.checkExecutable (DriverService.java:121)
+    at org.openqa.selenium.remote.service.DriverService.findExecutable (DriverService.java:116)
+    at org.openqa.selenium.chrome.ChromeDriverService.access$0 (ChromeDriverService.java:1)
+    at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable (ChromeDriverService.java:137)
+    at org.openqa.selenium.remote.service.DriverService$Builder.build (DriverService.java:290)
+    at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService (ChromeDriverService.java:88)
+    at org.openqa.selenium.chrome.ChromeDriver.<init> (ChromeDriver.java:138)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.server.DefaultDriverProvider.callConstructor (DefaultDriverProvider.java:103)
+    at org.openqa.selenium.remote.server.DefaultDriverProvider.newInstance (DefaultDriverProvider.java:97)
+    at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance (DefaultDriverFactory.java:60)
+    at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call (DefaultSession.java:222)
+    at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call (DefaultSession.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:30:02,940 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 11:30:47,447 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 11:30:47,447 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 11:31:03,779 -main.run_test_mp- [file:run_test_mp.py]-[func:<module>][line:64] - INFO: 开始执行测试用例...
+2017-07-04 11:31:03,780 -main.run_test_mp- [file:run_test_mp.py]-[func:<module>][line:69] - INFO: 正在生成测试报告：D:/PycharmProjects/kk_mp/mp/report/2017-07-04_11_31_03_result.html
+2017-07-04 11:31:03,782 -main.run_test_mp- [file:run_test_mp.py]-[func:<module>][line:80] - INFO: 正在组织测试用例...,测试用例路径为:D:/PycharmProjects/kk_mp/mp/test_model
+2017-07-04 11:31:04,269 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,269 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,270 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_login_usr_loc
+2017-07-04 11:31:04,270 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_login_usr_loc元素的方式为： xpath
+2017-07-04 11:31:04,270 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_login_usr_loc元素的值为:.//*[@id='loginName']
+2017-07-04 11:31:04,273 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,275 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,275 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_login_usr_paw_loc
+2017-07-04 11:31:04,276 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_login_usr_paw_loc元素的方式为： xpath
+2017-07-04 11:31:04,276 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_login_usr_paw_loc元素的值为:.//*[@id='password']
+2017-07-04 11:31:04,279 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,279 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,279 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_login_btn_loc
+2017-07-04 11:31:04,279 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_login_btn_loc元素的方式为： xpath
+2017-07-04 11:31:04,280 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_login_btn_loc元素的值为:.//*[@id='js-login-form']/div[4]/button
+2017-07-04 11:31:04,286 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,286 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,286 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_usr_error_hint_loc
+2017-07-04 11:31:04,288 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_usr_error_hint_loc元素的方式为： xpath
+2017-07-04 11:31:04,288 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_usr_error_hint_loc元素的值为:.//*[@id='js-login-form']/div[3]
+2017-07-04 11:31:04,293 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,295 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,295 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_pwd_error_hint_loc
+2017-07-04 11:31:04,295 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_pwd_error_hint_loc元素的方式为： xpath
+2017-07-04 11:31:04,295 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_pwd_error_hint_loc元素的值为:.//*[@id='js-login-form']/div[3]
+2017-07-04 11:31:04,299 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,299 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,299 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_usr_empty_hint_loc
+2017-07-04 11:31:04,299 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_usr_empty_hint_loc元素的方式为： xpath
+2017-07-04 11:31:04,299 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_usr_empty_hint_loc元素的值为:html/body/div[4]/div/table/tbody/tr[2]/td/div
+2017-07-04 11:31:04,302 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,303 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,303 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_pwd_empty_hint_loc
+2017-07-04 11:31:04,305 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_pwd_empty_hint_loc元素的方式为： xpath
+2017-07-04 11:31:04,305 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_pwd_empty_hint_loc元素的值为:html/body/div[4]/div/table/tbody/tr[2]/td/div
+2017-07-04 11:31:04,308 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,309 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,309 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_unbound_user_hint_loc
+2017-07-04 11:31:04,309 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_unbound_user_hint_loc元素的方式为： xpath
+2017-07-04 11:31:04,309 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_unbound_user_hint_loc元素的值为:.//*[@id='js-login-form']/div[3]
+2017-07-04 11:31:04,312 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,312 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,313 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_invalid_usr_hint_loc
+2017-07-04 11:31:04,313 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_invalid_usr_hint_loc元素的方式为： xpath
+2017-07-04 11:31:04,313 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_invalid_usr_hint_loc元素的值为:.//*[@id='js-login-form']/div[3]
+2017-07-04 11:31:04,318 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,318 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,319 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_login_success_hint_loc
+2017-07-04 11:31:04,319 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_login_success_hint_loc元素的方式为： xpath
+2017-07-04 11:31:04,319 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_login_success_hint_loc元素的值为:html/body/div[1]/div/ul/li[2]/a
+2017-07-04 11:31:04,328 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,329 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,329 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_quict_loc
+2017-07-04 11:31:04,329 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_quict_loc元素的方式为： linktext
+2017-07-04 11:31:04,331 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_quict_loc元素的值为:退出
+2017-07-04 11:31:04,334 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,334 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,335 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_custom_menu_loc
+2017-07-04 11:31:04,335 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_custom_menu_loc元素的方式为： linktext
+2017-07-04 11:31:04,335 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_custom_menu_loc元素的值为:自定义菜单
+2017-07-04 11:31:04,338 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,339 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,339 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_feedback_loc
+2017-07-04 11:31:04,339 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_feedback_loc元素的方式为： linktext
+2017-07-04 11:31:04,339 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_feedback_loc元素的值为:关注时回复
+2017-07-04 11:31:04,344 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,344 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,345 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_keyword_loc
+2017-07-04 11:31:04,345 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_keyword_loc元素的方式为： linktext
+2017-07-04 11:31:04,345 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_keyword_loc元素的值为:关键字回复
+2017-07-04 11:31:04,348 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,348 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,349 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_unrecognized_loc
+2017-07-04 11:31:04,349 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_unrecognized_loc元素的方式为： linktext
+2017-07-04 11:31:04,351 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_unrecognized_loc元素的值为:无法识别回复
+2017-07-04 11:31:04,357 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,357 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,357 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_timestamp_loc
+2017-07-04 11:31:04,358 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_timestamp_loc元素的方式为： xpath
+2017-07-04 11:31:04,358 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_timestamp_loc元素的值为:.//*[@id='js-main-page-content']/div[2]/ul/li/time
+2017-07-04 11:31:04,361 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,362 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,362 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_main_page_loc
+2017-07-04 11:31:04,371 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_main_page_loc元素的方式为： xpath
+2017-07-04 11:31:04,371 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_main_page_loc元素的值为:html/body/div[2]/div/div[2]/ol/li
+2017-07-04 11:31:04,375 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,375 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,375 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_service_name_loc
+2017-07-04 11:31:04,375 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_service_name_loc元素的方式为： xpath
+2017-07-04 11:31:04,377 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_service_name_loc元素的值为:.//*[@id='js-main-page-content']/div[1]/div[1]/div/h4
+2017-07-04 11:31:04,384 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,385 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,385 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_service_id_loc
+2017-07-04 11:31:04,385 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_service_id_loc元素的方式为： xpath
+2017-07-04 11:31:04,387 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_service_id_loc元素的值为:.//*[@id='js-main-page-content']/div[1]/div[1]/div/p
+2017-07-04 11:31:04,391 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,391 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,391 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_note_loc
+2017-07-04 11:31:04,392 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_note_loc元素的方式为： xpath
+2017-07-04 11:31:04,392 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_note_loc元素的值为:.//*[@id='js-main-page-content']/div[2]/ul/li/a/span
+2017-07-04 11:31:04,395 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,397 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,397 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_send_all_loc
+2017-07-04 11:31:04,398 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_send_all_loc元素的方式为： xpath
+2017-07-04 11:31:04,398 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_send_all_loc元素的值为:html/body/div[2]/div/div[2]/ol/li[2]
+2017-07-04 11:31:04,421 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,421 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,423 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_custom_menu_manage_loc
+2017-07-04 11:31:04,423 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_custom_menu_manage_loc元素的方式为： xpath
+2017-07-04 11:31:04,423 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_custom_menu_manage_loc元素的值为:.//*[@id='custom-menu-content']/ol/li[1]
+2017-07-04 11:31:04,434 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,434 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,434 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_feedback_manage_loc
+2017-07-04 11:31:04,436 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_feedback_manage_loc元素的方式为： xpath
+2017-07-04 11:31:04,436 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_feedback_manage_loc元素的值为:html/body/div[2]/div/div[2]/ol/li[2]
+2017-07-04 11:31:04,440 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,440 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,440 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_keyword_manage_loc
+2017-07-04 11:31:04,440 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_keyword_manage_loc元素的方式为： xpath
+2017-07-04 11:31:04,441 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_keyword_manage_loc元素的值为:html/body/div[2]/div/div[2]/ol/li[2]
+2017-07-04 11:31:04,447 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,447 -main.page_function- [file:page_function.py]-[func:get_page_element][line:82] - INFO: 定位元素中...
+2017-07-04 11:31:04,447 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位元素名称为：mp_unrecognized_manage_loc
+2017-07-04 11:31:04,447 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_unrecognized_manage_loc元素的方式为： xpath
+2017-07-04 11:31:04,448 -main.page_function- [file:page_function.py]-[func:get_page_element][line:87] - INFO: 定位mp_unrecognized_manage_loc元素的值为:html/body/div[2]/div/div[2]/ol/li[2]
+2017-07-04 11:31:04,480 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,480 -main.page_function- [file:page_function.py]-[func:get_page_element][line:90] - ERROR: 找不到元素： mp_basic_manage_loc
+2017-07-04 11:31:04,480 -main.page_function- [file:page_function.py]-[func:get_page_element][line:91] - ERROR: list index out of range
+2017-07-04 11:31:04,486 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-04 11:31:04,486 -main.page_function- [file:page_function.py]-[func:get_page_element][line:90] - ERROR: 找不到元素： mp_source_manage_loc
+2017-07-04 11:31:04,486 -main.page_function- [file:page_function.py]-[func:get_page_element][line:91] - ERROR: list index out of range
+2017-07-04 11:31:10,539 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 11:31:10,539 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 11:31:17,980 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 11:31:17,980 -main- [file:login_test.py]-[func:test_001_login][line:22] - INFO: 开始执行测试用例：用例编号001：mp登录-用户名、密码为空
+2017-07-04 11:31:17,980 -main- [file:login_test.py]-[func:test_001_login][line:23] - INFO: 开始登录操作...
+2017-07-04 11:31:17,983 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:31:17,984 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为1
+2017-07-04 11:31:17,986 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:
+2017-07-04 11:31:17,987 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:31:17,989 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为1
+2017-07-04 11:31:17,989 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:
+2017-07-04 11:31:23,510 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 11:31:50,571 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 11:31:50,571 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2884_14776}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 643ad5dbee1fb5b78a99553b1b96b108
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:31:50,572 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: 
+2017-07-04 11:32:17,382 -main- [file:my_unittest.py]-[func:user_normal_login][line:61] - ERROR: 登录失败！
+2017-07-04 11:32:17,382 -main- [file:my_unittest.py]-[func:user_normal_login][line:62] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2884_14776}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 643ad5dbee1fb5b78a99553b1b96b108
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:32:17,385 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:32:17,385 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为1
+2017-07-04 11:32:17,387 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:value, 读取到的测试数据值为:用户名不能为空
+2017-07-04 11:32:17,436 -main.page_function- [file:page_function.py]-[func:get_expected_value][line:123] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为1,读取到的测试期望值为:用户名不能为空
+2017-07-04 11:32:17,438 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:32:17,440 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为1
+2017-07-04 11:32:17,440 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:title, 读取到的测试数据值为:用例编号001：mp登录-用户名、密码为空.jpg
+2017-07-04 11:32:17,440 -main.page_function- [file:page_function.py]-[func:get_image_title][line:139] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为1,读取到的截图名称为: 用例编号001：mp登录-用户名、密码为空.jpg
+2017-07-04 11:32:54,881 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 11:32:54,882 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 11:33:02,279 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 11:33:02,279 -main- [file:login_test.py]-[func:test_002_login][line:33] - INFO: 开始执行测试用例：用例编号002：mp登录-用户名正确、密码为空
+2017-07-04 11:33:02,279 -main- [file:login_test.py]-[func:test_002_login][line:34] - INFO: 开始登录操作...
+2017-07-04 11:33:02,282 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:33:02,282 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为2
+2017-07-04 11:33:02,282 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:test
+2017-07-04 11:33:02,292 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:33:02,292 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为2
+2017-07-04 11:33:02,292 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:
+2017-07-04 11:33:07,816 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 11:33:34,684 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 11:33:34,684 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir3256_17068}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 945db8f7abadf7504e38a314152e0d00
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:33:34,684 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: test
+2017-07-04 11:34:01,493 -main- [file:my_unittest.py]-[func:user_normal_login][line:61] - ERROR: 登录失败！
+2017-07-04 11:34:01,493 -main- [file:my_unittest.py]-[func:user_normal_login][line:62] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir3256_17068}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 945db8f7abadf7504e38a314152e0d00
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:34:01,496 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:34:01,497 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为2
+2017-07-04 11:34:01,497 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:value, 读取到的测试数据值为:登陆密码不能为空
+2017-07-04 11:34:01,517 -main.page_function- [file:page_function.py]-[func:get_expected_value][line:123] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为2,读取到的测试期望值为:登陆密码不能为空
+2017-07-04 11:34:38,348 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 11:34:38,348 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 11:34:45,854 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 11:34:45,855 -main- [file:login_test.py]-[func:test_003_login][line:44] - INFO: 开始执行测试用例：用例编号003：mp登录-用户名正确、未绑定公众号
+2017-07-04 11:34:45,855 -main- [file:login_test.py]-[func:test_003_login][line:45] - INFO: 开始登录操作...
+2017-07-04 11:34:45,858 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:34:45,858 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为3
+2017-07-04 11:34:45,858 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:0065
+2017-07-04 11:34:45,862 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:34:45,862 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为3
+2017-07-04 11:34:45,864 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:1
+2017-07-04 11:34:51,259 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 11:35:18,242 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 11:35:18,243 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2616_6095}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: fa11b6f44d798f0bd2d470b72b426a20
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:35:18,243 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: 0065
+2017-07-04 11:35:45,217 -main- [file:my_unittest.py]-[func:user_normal_login][line:61] - ERROR: 登录失败！
+2017-07-04 11:35:45,217 -main- [file:my_unittest.py]-[func:user_normal_login][line:62] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2616_6095}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: fa11b6f44d798f0bd2d470b72b426a20
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:35:45,220 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:35:45,220 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为3
+2017-07-04 11:35:45,220 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:value, 读取到的测试数据值为:此运营人员没有关联公众号，请关联后操作
+2017-07-04 11:35:45,242 -main.page_function- [file:page_function.py]-[func:get_expected_value][line:123] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为3,读取到的测试期望值为:此运营人员没有关联公众号，请关联后操作
+2017-07-04 11:36:22,196 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 11:36:22,196 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 11:36:29,684 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 11:36:29,684 -main- [file:login_test.py]-[func:test_004_login][line:55] - INFO: 开始执行测试用例：用例编号004：mp登录-运营人员不存在
+2017-07-04 11:36:29,684 -main- [file:login_test.py]-[func:test_004_login][line:56] - INFO: 开始登录操作...
+2017-07-04 11:36:29,687 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:36:29,687 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为4
+2017-07-04 11:36:29,687 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:abcdefg
+2017-07-04 11:36:29,690 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:36:29,691 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为4
+2017-07-04 11:36:29,691 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:1
+2017-07-04 11:36:35,211 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 11:37:02,359 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 11:37:02,359 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir260_26544}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: b864cb7e7368f0cd610c769f310683c3
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:37:02,361 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: abcdefg
+2017-07-04 11:37:30,779 -main- [file:my_unittest.py]-[func:user_normal_login][line:61] - ERROR: 登录失败！
+2017-07-04 11:37:30,780 -main- [file:my_unittest.py]-[func:user_normal_login][line:62] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir260_26544}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: b864cb7e7368f0cd610c769f310683c3
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:37:30,783 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:37:30,785 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为4
+2017-07-04 11:37:30,785 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:value, 读取到的测试数据值为:此运营人员不存在
+2017-07-04 11:37:30,785 -main.page_function- [file:page_function.py]-[func:get_expected_value][line:123] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为4,读取到的测试期望值为:此运营人员不存在
+2017-07-04 11:38:07,533 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 11:38:07,533 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 11:38:15,263 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 11:38:15,263 -main- [file:login_test.py]-[func:test_005_login][line:66] - INFO: 开始执行测试用例：用例编号005：mp登录-用户名或密码错误 
+2017-07-04 11:38:15,263 -main- [file:login_test.py]-[func:test_005_login][line:67] - INFO: 开始登录操作...
+2017-07-04 11:38:15,266 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:38:15,266 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为5
+2017-07-04 11:38:15,267 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:fupd
+2017-07-04 11:38:15,270 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:38:15,270 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为5
+2017-07-04 11:38:15,272 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:1789789
+2017-07-04 11:39:00,660 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 11:39:27,756 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 11:39:27,756 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir3368_23395}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 8cec35bf8d1e760f816364f3cbc8a2f4
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:39:27,757 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: fupd
+2017-07-04 11:39:54,747 -main- [file:my_unittest.py]-[func:user_normal_login][line:61] - ERROR: 登录失败！
+2017-07-04 11:39:54,749 -main- [file:my_unittest.py]-[func:user_normal_login][line:62] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.00 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir3368_23395}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 8cec35bf8d1e760f816364f3cbc8a2f4
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:39:54,752 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:39:54,752 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为5
+2017-07-04 11:39:54,753 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:value, 读取到的测试数据值为:用户名或密码错误，请重新输入
+2017-07-04 11:39:54,778 -main.page_function- [file:page_function.py]-[func:get_expected_value][line:123] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为5,读取到的测试期望值为:用户名或密码错误，请重新输入
+2017-07-04 11:40:32,026 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 11:40:32,026 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 11:40:39,519 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 11:40:39,519 -main- [file:login_test.py]-[func:test_006_login][line:77] - INFO: 开始执行测试用例：用例编号006：mp登录-用户名密码正确，且绑定了公众号 
+2017-07-04 11:40:39,519 -main- [file:login_test.py]-[func:test_006_login][line:78] - INFO: 开始登录操作...
+2017-07-04 11:40:39,523 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:40:39,523 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 11:40:39,523 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:0099
+2017-07-04 11:40:39,529 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:40:39,529 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 11:40:39,529 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:1
+2017-07-04 11:41:16,867 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 11:42:06,785 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 11:42:06,785 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 33.00 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2312_12359}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 2dde914996b531a0c24506d15cf5baaa
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:42:06,786 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: 0099
+2017-07-04 11:42:57,888 -main- [file:my_unittest.py]-[func:user_normal_login][line:61] - ERROR: 登录失败！
+2017-07-04 11:42:57,888 -main- [file:my_unittest.py]-[func:user_normal_login][line:62] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2312_12359}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 2dde914996b531a0c24506d15cf5baaa
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:42:57,895 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:42:57,897 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 11:42:57,897 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:value, 读取到的测试数据值为:退出
+2017-07-04 11:42:57,898 -main.page_function- [file:page_function.py]-[func:get_expected_value][line:123] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6,读取到的测试期望值为:退出
+2017-07-04 11:43:35,779 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 11:43:35,779 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 11:43:43,540 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 11:43:43,540 -main.page_function- [file:logout_test.py]-[func:test_007_login_out][line:18] - INFO: 开始执行测试用例：用例编号007：mp登录-用户名密码正确，且绑定了公众号,然后退出
+2017-07-04 11:43:43,540 -main.page_function- [file:logout_test.py]-[func:test_007_login_out][line:19] - INFO: 开始登出操作...
+2017-07-04 11:43:43,545 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:43:43,545 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为7
+2017-07-04 11:43:43,546 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:0099
+2017-07-04 11:43:43,551 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:43:43,551 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为7
+2017-07-04 11:43:43,552 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:1
+2017-07-04 11:44:28,953 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 11:45:18,980 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 11:45:18,980 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32.96 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir888_9163}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 72acd5b4ef535e6dd0906f06ce406a67
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:45:18,982 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: 0099
+2017-07-04 11:46:09,903 -main- [file:my_unittest.py]-[func:user_normal_login][line:61] - ERROR: 登录失败！
+2017-07-04 11:46:09,903 -main- [file:my_unittest.py]-[func:user_normal_login][line:62] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 33.85 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir888_9163}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 72acd5b4ef535e6dd0906f06ce406a67
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:46:47,684 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 11:46:47,684 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 11:46:55,086 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 11:46:55,086 -main.page_function- [file:main_page_check_test.py]-[func:test_008_loc][line:14] - INFO: 开始执行测试用例：用例编号008：mp登录-用户名密码正确，且绑定了公众号，登录后检查首页位置
+2017-07-04 11:46:55,086 -main.page_function- [file:main_page_check_test.py]-[func:test_008_loc][line:15] - INFO: 开始登录操作...
+2017-07-04 11:46:55,091 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:46:55,091 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 11:46:55,092 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:0099
+2017-07-04 11:46:55,095 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:46:55,095 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 11:46:55,095 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:1
+2017-07-04 11:47:40,529 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 11:48:30,404 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 11:48:30,404 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32.88 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir3428_27702}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 0e4042478d5d8f826ee13a5d82f11fbf
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:48:30,404 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: 0099
+2017-07-04 11:49:21,503 -main- [file:my_unittest.py]-[func:user_login_success][line:46] - ERROR: 登录失败！
+2017-07-04 11:49:21,505 -main- [file:my_unittest.py]-[func:user_login_success][line:47] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir3428_27702}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 0e4042478d5d8f826ee13a5d82f11fbf
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:49:21,509 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:49:21,509 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为8
+2017-07-04 11:49:21,509 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:value, 读取到的测试数据值为:首页
+2017-07-04 11:49:21,516 -main.page_function- [file:page_function.py]-[func:get_expected_value][line:123] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为008,读取到的测试期望值为:首页
+2017-07-04 11:49:59,188 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 11:49:59,190 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 11:50:06,505 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 11:50:06,506 -main.page_function- [file:main_page_check_test.py]-[func:test_009_service_name][line:25] - INFO: 开始执行测试用例：用例编号009：mp登录-用户名密码正确，且绑定了公众号，登录后检查公众号名称
+2017-07-04 11:50:06,506 -main.page_function- [file:main_page_check_test.py]-[func:test_009_service_name][line:26] - INFO: 开始登录操作...
+2017-07-04 11:50:06,509 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:50:06,509 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 11:50:06,509 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:0099
+2017-07-04 11:50:06,515 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:50:06,516 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 11:50:06,516 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:1
+2017-07-04 11:50:52,030 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 11:51:41,928 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 11:51:41,930 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32.91 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir1756_27507}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 3b8d8034751135de65d57b8dd335e251
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:51:41,930 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: 0099
+2017-07-04 11:52:32,924 -main- [file:my_unittest.py]-[func:user_login_success][line:46] - ERROR: 登录失败！
+2017-07-04 11:52:32,924 -main- [file:my_unittest.py]-[func:user_login_success][line:47] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 33.93 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir1756_27507}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 3b8d8034751135de65d57b8dd335e251
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:52:32,927 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:52:32,928 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为9
+2017-07-04 11:52:32,928 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:value, 读取到的测试数据值为:公众号1
+2017-07-04 11:52:33,589 -main.page_function- [file:page_function.py]-[func:get_expected_value][line:123] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为009,读取到的测试期望值为:公众号1
+2017-07-04 11:53:11,434 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 11:53:11,436 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 11:53:19,071 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 11:53:19,071 -main.page_function- [file:main_page_check_test.py]-[func:test_010_service_id][line:36] - INFO: 开始执行测试用例：用例编号010：mp登录-用户名密码正确，且绑定了公众号，登录后检查公众号id
+2017-07-04 11:53:19,071 -main.page_function- [file:main_page_check_test.py]-[func:test_010_service_id][line:37] - INFO: 开始登录操作...
+2017-07-04 11:53:19,073 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:53:19,075 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 11:53:19,075 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:0099
+2017-07-04 11:53:19,078 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:53:19,078 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 11:53:19,078 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:1
+2017-07-04 11:54:04,576 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 11:54:54,456 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 11:54:54,457 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32.93 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2448_30860}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: f8fb84054b853328f4d45cdf82588f86
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:54:54,457 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: 0099
+2017-07-04 11:55:45,516 -main- [file:my_unittest.py]-[func:user_login_success][line:46] - ERROR: 登录失败！
+2017-07-04 11:55:45,516 -main- [file:my_unittest.py]-[func:user_login_success][line:47] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2448_30860}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: f8fb84054b853328f4d45cdf82588f86
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:55:45,520 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:55:45,522 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为10
+2017-07-04 11:55:45,522 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:value, 读取到的测试数据值为:公众号ID：24
+2017-07-04 11:55:48,272 -main.page_function- [file:page_function.py]-[func:get_expected_value][line:123] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为010,读取到的测试期望值为:公众号ID：24
+2017-07-04 11:56:26,128 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 11:56:26,128 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 11:56:33,611 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 11:56:33,611 -main.page_function- [file:main_page_check_test.py]-[func:test_011_note][line:47] - INFO: 开始执行测试用例：用例编号011：mp登录-用户名密码正确，且绑定了公众号，登录后检查公众号公告内容
+2017-07-04 11:56:33,612 -main.page_function- [file:main_page_check_test.py]-[func:test_011_note][line:48] - INFO: 开始登录操作...
+2017-07-04 11:56:33,618 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:56:33,618 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 11:56:33,618 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:0099
+2017-07-04 11:56:33,625 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:56:33,627 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 11:56:33,627 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:1
+2017-07-04 11:57:18,983 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 11:58:08,905 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 11:58:08,907 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32.95 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2176_5444}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 22cebc3e9c66883ae4e5b2bc02662f4b
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:58:08,907 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: 0099
+2017-07-04 11:58:59,901 -main- [file:my_unittest.py]-[func:user_login_success][line:46] - ERROR: 登录失败！
+2017-07-04 11:58:59,901 -main- [file:my_unittest.py]-[func:user_login_success][line:47] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2176_5444}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 22cebc3e9c66883ae4e5b2bc02662f4b
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 11:58:59,904 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:58:59,904 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为11
+2017-07-04 11:58:59,904 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:value, 读取到的测试数据值为:蓝凌软件群发功能全新上线
+2017-07-04 11:58:59,960 -main.page_function- [file:page_function.py]-[func:get_expected_value][line:123] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为011,读取到的测试期望值为:蓝凌软件群发功能全新上线
+2017-07-04 11:59:37,279 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 11:59:37,279 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 11:59:44,641 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 11:59:44,641 -main- [file:main_page_menu_forward_test.py]-[func:test_012_forward_send_all][line:17] - INFO: 开始执行测试用例：用例编号012：mp登录后，通过点击蓝凌软件群发功能全新上线跳转到群发消息界面
+2017-07-04 11:59:44,641 -main- [file:main_page_menu_forward_test.py]-[func:test_012_forward_send_all][line:18] - INFO: 开始登录操作...
+2017-07-04 11:59:44,644 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:59:44,645 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 11:59:44,645 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:0099
+2017-07-04 11:59:44,650 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 11:59:44,650 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 11:59:44,651 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:1
+2017-07-04 12:00:29,947 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 12:01:19,855 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 12:01:19,857 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32.86 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2040_23586}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 1e43bf9a12e63715bb8e2b22af193c38
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 12:01:19,857 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: 0099
+2017-07-04 12:02:10,940 -main- [file:my_unittest.py]-[func:user_login_success][line:46] - ERROR: 登录失败！
+2017-07-04 12:02:10,941 -main- [file:my_unittest.py]-[func:user_login_success][line:47] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2040_23586}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 1e43bf9a12e63715bb8e2b22af193c38
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 12:02:48,484 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 12:02:48,486 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 12:02:56,052 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 12:02:56,052 -main- [file:main_page_menu_forward_test.py]-[func:test_013_forward_customed_menu][line:29] - INFO: 开始执行测试用例：用例编号013：mp登录后，通过点击自定义菜单跳转到自定义菜单界面
+2017-07-04 12:02:56,052 -main- [file:main_page_menu_forward_test.py]-[func:test_013_forward_customed_menu][line:30] - INFO: 开始登录操作...
+2017-07-04 12:02:56,055 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 12:02:56,055 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 12:02:56,055 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:0099
+2017-07-04 12:02:56,059 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 12:02:56,061 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 12:02:56,061 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:1
+2017-07-04 12:03:41,558 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 12:04:31,483 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 12:04:31,483 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32.88 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2148_14963}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 07ad88666212a68fc4989e15e7299799
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 12:04:31,483 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: 0099
+2017-07-04 12:05:22,463 -main- [file:my_unittest.py]-[func:user_login_success][line:46] - ERROR: 登录失败！
+2017-07-04 12:05:22,463 -main- [file:my_unittest.py]-[func:user_login_success][line:47] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 33.78 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2148_14963}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 07ad88666212a68fc4989e15e7299799
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 12:05:59,924 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 12:05:59,924 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 12:06:07,378 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 12:06:07,378 -main- [file:main_page_menu_forward_test.py]-[func:test_014_forward_follow_feedback][line:41] - INFO: 开始执行测试用例：用例编号014：mp登录后，通过点击关注时回复跳转到关注回复设置界面
+2017-07-04 12:06:07,378 -main- [file:main_page_menu_forward_test.py]-[func:test_014_forward_follow_feedback][line:42] - INFO: 开始登录操作...
+2017-07-04 12:06:07,381 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 12:06:07,381 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 12:06:07,381 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:0099
+2017-07-04 12:06:07,384 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 12:06:07,385 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 12:06:07,385 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:1
+2017-07-04 12:06:52,729 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 12:07:42,709 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 12:07:42,709 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32.88 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2988_32160}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6ef95a4e9048ec60b22fa0f363dd91b6
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 12:07:42,709 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: 0099
+2017-07-04 12:08:33,663 -main- [file:my_unittest.py]-[func:user_login_success][line:46] - ERROR: 登录失败！
+2017-07-04 12:08:33,664 -main- [file:my_unittest.py]-[func:user_login_success][line:47] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 33.85 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2988_32160}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6ef95a4e9048ec60b22fa0f363dd91b6
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 12:09:11,105 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 12:09:11,105 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 12:09:18,591 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 12:09:18,591 -main- [file:main_page_menu_forward_test.py]-[func:test_015_forward_keyword_feedback][line:53] - INFO: 开始执行测试用例：用例编号015：mp登录后，通过点击关键字回复跳转到关键字回复设置界面
+2017-07-04 12:09:18,592 -main- [file:main_page_menu_forward_test.py]-[func:test_015_forward_keyword_feedback][line:54] - INFO: 开始登录操作...
+2017-07-04 12:09:18,595 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 12:09:18,595 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 12:09:18,595 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:0099
+2017-07-04 12:09:18,599 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 12:09:18,601 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 12:09:18,601 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:1
+2017-07-04 12:10:03,944 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 12:10:53,831 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 12:10:53,831 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32.94 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir900_10223}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 0fc42f9cd56a545ce7984ad37f1c1f26
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 12:10:53,832 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: 0099
+2017-07-04 12:11:44,825 -main- [file:my_unittest.py]-[func:user_login_success][line:46] - ERROR: 登录失败！
+2017-07-04 12:11:44,826 -main- [file:my_unittest.py]-[func:user_login_success][line:47] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir900_10223}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 0fc42f9cd56a545ce7984ad37f1c1f26
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 12:12:22,351 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 12:12:22,351 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 12:12:29,953 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 12:12:29,953 -main- [file:main_page_menu_forward_test.py]-[func:test_016_forwad_unrecognized_feedback][line:65] - INFO: 用例编号016：mp登录后，通过点击无法失败回复跳转到无法识别回复设置界面
+2017-07-04 12:12:29,954 -main- [file:main_page_menu_forward_test.py]-[func:test_016_forwad_unrecognized_feedback][line:66] - INFO: 开始登录操作...
+2017-07-04 12:12:29,957 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 12:12:29,957 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 12:12:29,959 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:0099
+2017-07-04 12:12:29,961 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 12:12:29,963 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 12:12:29,963 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:1
+2017-07-04 12:13:15,348 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 12:14:05,178 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 12:14:05,180 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32.85 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir3384_4164}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 93795c9821af6775d3177e184c4465f5
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 12:14:05,180 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: 0099
+2017-07-04 12:14:56,265 -main- [file:my_unittest.py]-[func:user_login_success][line:46] - ERROR: 登录失败！
+2017-07-04 12:14:56,266 -main- [file:my_unittest.py]-[func:user_login_success][line:47] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir3384_4164}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 93795c9821af6775d3177e184c4465f5
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 12:15:33,796 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-04 12:15:33,796 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:41] - INFO: 指定浏览器为chrome
+2017-07-04 12:15:41,444 -main- [file:my_unittest.py]-[func:setUp][line:24] - INFO: 浏览器窗口最大化...
+2017-07-04 12:15:41,444 -main- [file:source_manage_test.py]-[func:test_017_page_text][line:18] - INFO: 开始执行测试用例：mp登录后，创建单图文素材
+2017-07-04 12:15:41,446 -main- [file:source_manage_test.py]-[func:test_017_page_text][line:19] - INFO: 开始登录操作...
+2017-07-04 12:15:41,447 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 12:15:41,448 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 12:15:41,448 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:0099
+2017-07-04 12:15:41,457 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 12:15:41,459 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为6
+2017-07-04 12:15:41,459 -main.page_function- [file:page_function.py]-[func:get_test_data][line:60] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:1
+2017-07-04 12:16:27,023 -main- [file:loginPage.py]-[func:mp_user_login][line:137] - INFO: 打开浏览器: http://192.168.2.88:8050/WxMgr/webconsole/login.jsp
+2017-07-04 12:17:22,382 -main- [file:loginPage.py]-[func:input_login_username][line:47] - ERROR: 向登录的用户名输入框输入失败！
+2017-07-04 12:17:22,384 -main- [file:loginPage.py]-[func:input_login_username][line:48] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32.63 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2484_16279}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6d629b7e938719aabc7c3d53b0819374
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 12:17:22,384 -main- [file:loginPage.py]-[func:mp_user_login][line:139] - INFO: 输入用户名: 0099
+2017-07-04 12:18:07,913 -main- [file:my_unittest.py]-[func:user_login_success][line:46] - ERROR: 登录失败！
+2017-07-04 12:18:07,913 -main- [file:my_unittest.py]-[func:user_login_success][line:47] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='password']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28.45 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2484_16279}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6d629b7e938719aabc7c3d53b0819374
+*** Element info: {Using=xpath, value=.//*[@id='password']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-04 12:18:07,915 -main.base_function- [file:base_function.py]-[func:read_xml][line:50] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-04 12:18:07,917 -main.page_function- [file:page_function.py]-[func:get_test_data][line:59] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为17
+2017-07-04 12:18:07,917 -main.page_function- [file:page_function.py]-[func:get_test_data][line:63] - ERROR: 读取测试数据失败！
+2017-07-04 12:18:07,931 -main.page_function- [file:page_function.py]-[func:get_test_data][line:64] - ERROR: list index out of range
+2017-07-04 12:18:07,931 -main.page_function- [file:page_function.py]-[func:get_expected_value][line:123] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为017,读取到的测试期望值为:None
+2017-07-04 12:18:12,427 -main.run_test_mp- [file:run_test_mp.py]-[func:<module>][line:84] - INFO: 开始执行...
+2017-07-04 12:18:17,082 -main.run_test_mp- [file:run_test_mp.py]-[func:send_mail][line:41] - INFO: 发送邮件中：由 eating<diqiuqq@163.com> 发往 maoyt@landray.com.cn 
+2017-07-04 12:18:17,082 -main.run_test_mp- [file:run_test_mp.py]-[func:send_mail][line:42] - INFO: 邮件发送成功！

@@ -80,7 +80,13 @@
 	<mp_unrecognized_manage_loc loc_by = "xpath" loc="html/body/div[2]/div/div[2]/ol/li[2]"/>
 	
 	<!--mp 左侧管理界面:基础管理-->
+	<mp_basic_manage_loc loc_by = "xpath" loc=".//*[@id='side-menu']/li[1]/label"/>
 	
+	<!--mp 左侧管理界面:基础管理-->
+	<mp_source_manage_loc loc_by = "xpath" loc=".//*[@id='side-menu']/li[1]/ul/li/a"/>
+	
+	<!--mp左侧管理菜单:基础管理-素材管理界面-->
+	<mp_source_manage_title_loc loc_by = "xpath" loc="html/body/div[2]/div/div[2]/ol/li[2]"/>
 	
 	
 

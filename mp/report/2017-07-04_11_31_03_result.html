@@ -1,0 +1,1573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>mp&lt;运营管理平台&gt;自动化测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>mp&lt;运营管理平台&gt;自动化测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2017-07-04 11:31:03</p>
+<p class='attribute'><strong>Duration:</strong> 0:47:08.638000</p>
+<p class='attribute'><strong>Status:</strong> Error 17</p>
+
+<p class='description'>环境: windows7 浏览器: chrome</p>
+</div>
+
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_case.login_test.LoginTest:  mp 登录用户名和密码测试 </td>
+    <td>6</td>
+    <td>0</td>
+    <td>0</td>
+    <td>6</td>
+    <td><a href="javascript:showClassDetail('c1',6)">Detail</a></td>
+</tr>
+
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_001_login: 用例编号001：mp登录-用户名、密码为空</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        error</a>
+
+    <div id='div_ft1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.1: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\login_test.py", line 27, in test_001_login
+    self.assertEqual(self.get_login_page().get_usr_empty_hint(), expected_value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\loginPage.py", line 94, in get_usr_empty_hint
+    return self.find_element(self.mp_usr_empty_hint_loc).text
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 49, in find_element
+    return getElement(by, self.driver, value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\page_function.py", line 41, in getElement
+    return driver.find_element_by_xpath(value)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 293, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 752, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"html/body/div[4]/div/table/tbody/tr[2]/td/div"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2884_14776}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 643ad5dbee1fb5b78a99553b1b96b108
+*** Element info: {Using=xpath, value=html/body/div[4]/div/table/tbody/tr[2]/td/div}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_002_login: 用例编号002：mp登录-用户名正确、密码为空</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        error</a>
+
+    <div id='div_ft1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.2: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\login_test.py", line 37, in test_002_login
+    self.assertEqual(self.get_login_page().get_pwd_empty_hint(), expected_value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\loginPage.py", line 101, in get_pwd_empty_hint
+    return self.find_element(self.mp_pwd_empty_hint_loc).text
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 49, in find_element
+    return getElement(by, self.driver, value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\page_function.py", line 41, in getElement
+    return driver.find_element_by_xpath(value)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 293, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 752, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"html/body/div[4]/div/table/tbody/tr[2]/td/div"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir3256_17068}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 945db8f7abadf7504e38a314152e0d00
+*** Element info: {Using=xpath, value=html/body/div[4]/div/table/tbody/tr[2]/td/div}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_003_login: 用例编号003：mp登录-用户名正确、未绑定公众号</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
+        error</a>
+
+    <div id='div_ft1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.3: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\login_test.py", line 48, in test_003_login
+    self.assertEqual(self.get_login_page().get_unbound_user_hint(), expected_value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\loginPage.py", line 108, in get_unbound_user_hint
+    return self.find_element(self.mp_unbound_user_hint_loc).text
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 49, in find_element
+    return getElement(by, self.driver, value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\page_function.py", line 41, in getElement
+    return driver.find_element_by_xpath(value)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 293, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 752, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='js-login-form']/div[3]"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2616_6095}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: fa11b6f44d798f0bd2d470b72b426a20
+*** Element info: {Using=xpath, value=.//*[@id='js-login-form']/div[3]}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_004_login: 用例编号004：mp登录-运营人员不存在</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
+        error</a>
+
+    <div id='div_ft1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.4: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\login_test.py", line 59, in test_004_login
+    self.assertEqual(self.get_login_page().get_invalid_usr_hint(), expected_value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\loginPage.py", line 115, in get_invalid_usr_hint
+    return self.find_element(self.mp_invalid_usr_hint_loc).text
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 49, in find_element
+    return getElement(by, self.driver, value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\page_function.py", line 41, in getElement
+    return driver.find_element_by_xpath(value)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 293, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 752, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='js-login-form']/div[3]"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir260_26544}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: b864cb7e7368f0cd610c769f310683c3
+*** Element info: {Using=xpath, value=.//*[@id='js-login-form']/div[3]}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_005_login: 用例编号005：mp登录-用户名或密码错误</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.5')" >
+        error</a>
+
+    <div id='div_ft1.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.5: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\login_test.py", line 70, in test_005_login
+    self.assertEqual(self.get_login_page().get_pwd_error_hint(), expected_value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\loginPage.py", line 87, in get_pwd_error_hint
+    return self.find_element(self.mp_pwd_error_hint_loc).text
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 49, in find_element
+    return getElement(by, self.driver, value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\page_function.py", line 41, in getElement
+    return driver.find_element_by_xpath(value)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 293, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 752, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='js-login-form']/div[3]"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir3368_23395}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 8cec35bf8d1e760f816364f3cbc8a2f4
+*** Element info: {Using=xpath, value=.//*[@id='js-login-form']/div[3]}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.6' class='none'>
+    <td class='errorCase'><div class='testcase'>test_006_login: 用例编号006：mp登录-用户名密码正确，且绑定了公众号</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.6')" >
+        error</a>
+
+    <div id='div_ft1.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.6: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\login_test.py", line 81, in test_006_login
+    self.assertEqual(self.get_login_page().get_login_success_hint(), expected_value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\loginPage.py", line 122, in get_login_success_hint
+    return self.find_element(self.mp_login_success_hint_loc).text
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 49, in find_element
+    return getElement(by, self.driver, value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\page_function.py", line 41, in getElement
+    return driver.find_element_by_xpath(value)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 293, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 752, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"html/body/div[1]/div/ul/li[2]/a"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2312_12359}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 2dde914996b531a0c24506d15cf5baaa
+*** Element info: {Using=xpath, value=html/body/div[1]/div/ul/li[2]/a}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_case.logout_test.LoginOutTest: mp 登录成功后退出测试</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
+</tr>
+
+<tr id='ft2.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_007_login_out: 用例编号007：mp登录-用户名密码正确，且绑定了公众号,然后退出</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
+        error</a>
+
+    <div id='div_ft2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.1: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\logout_test.py", line 20, in test_007_login_out
+    self.login_out("007")
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\logout_test.py", line 14, in login_out
+    MainPage(self.driver).mp_login_out()
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\main_page.py", line 93, in mp_login_out
+    self.get_mp_quit_btn().click()
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\main_page.py", line 89, in get_mp_quit_btn
+    return self.find_element(self.mp_quict_loc)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 49, in find_element
+    return getElement(by, self.driver, value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\page_function.py", line 35, in getElement
+    return driver.find_element_by_link_text(value)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 317, in find_element_by_link_text
+    return self.find_element(by=By.LINK_TEXT, value=link_text)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 752, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"éåº"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir888_9163}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 72acd5b4ef535e6dd0906f06ce406a67
+*** Element info: {Using=link text, value=éåº}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText (RemoteWebDriver.java:397)
+    at org.openqa.selenium.By$ByLinkText.findElement (By.java:243)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_case.main_page_check_test.MainPageCheckTest: mp 登录首页页面元素数据检查</td>
+    <td>4</td>
+    <td>0</td>
+    <td>0</td>
+    <td>4</td>
+    <td><a href="javascript:showClassDetail('c3',4)">Detail</a></td>
+</tr>
+
+<tr id='ft3.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_008_loc: 用例编号008：mp登录-用户名密码正确，且绑定了公众号，登录后检查首页位置</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.1')" >
+        error</a>
+
+    <div id='div_ft3.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.1: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\main_page_check_test.py", line 18, in test_008_loc
+    self.assertEqual(MainPage(self.driver).get_mp_main_page_loc_text(),expected_value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\main_page.py", line 47, in get_mp_main_page_loc_text
+    return self.find_element(self.mp_main_page_loc).text
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 49, in find_element
+    return getElement(by, self.driver, value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\page_function.py", line 41, in getElement
+    return driver.find_element_by_xpath(value)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 293, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 752, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"html/body/div[2]/div/div[2]/ol/li"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir3428_27702}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 0e4042478d5d8f826ee13a5d82f11fbf
+*** Element info: {Using=xpath, value=html/body/div[2]/div/div[2]/ol/li}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_009_service_name: 用例编号009：mp登录-用户名密码正确，且绑定了公众号，登录后检查公众号名称</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.2')" >
+        error</a>
+
+    <div id='div_ft3.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.2: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\main_page_check_test.py", line 29, in test_009_service_name
+    self.assertEqual(MainPage(self.driver).get_mp_service_name_text(),expected_value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\main_page.py", line 44, in get_mp_service_name_text
+    return self.find_element(self.mp_service_name_loc).text
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 49, in find_element
+    return getElement(by, self.driver, value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\page_function.py", line 41, in getElement
+    return driver.find_element_by_xpath(value)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 293, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 752, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='js-main-page-content']/div[1]/div[1]/div/h4"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir1756_27507}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 3b8d8034751135de65d57b8dd335e251
+*** Element info: {Using=xpath, value=.//*[@id='js-main-page-content']/div[1]/div[1]/div/h4}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_010_service_id: 用例编号010：mp登录-用户名密码正确，且绑定了公众号，登录后检查公众号id</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.3')" >
+        error</a>
+
+    <div id='div_ft3.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.3: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\main_page_check_test.py", line 40, in test_010_service_id
+    self.assertEqual(MainPage(self.driver).get_mp_service_id_text(),expected_value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\main_page.py", line 41, in get_mp_service_id_text
+    return self.find_element(self.mp_service_id_loc).text
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 49, in find_element
+    return getElement(by, self.driver, value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\page_function.py", line 41, in getElement
+    return driver.find_element_by_xpath(value)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 293, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 752, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='js-main-page-content']/div[1]/div[1]/div/p"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2448_30860}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: f8fb84054b853328f4d45cdf82588f86
+*** Element info: {Using=xpath, value=.//*[@id='js-main-page-content']/div[1]/div[1]/div/p}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_011_note: 用例编号011：mp登录-用户名密码正确，且绑定了公众号，登录后检查公众号公告内容</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.4')" >
+        error</a>
+
+    <div id='div_ft3.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.4: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\main_page_check_test.py", line 51, in test_011_note
+    self.assertEqual(MainPage(self.driver).get_mp_note_text(),expected_value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\main_page.py", line 38, in get_mp_note_text
+    return self.find_element(self.mp_note_loc).text
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 49, in find_element
+    return getElement(by, self.driver, value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\page_function.py", line 41, in getElement
+    return driver.find_element_by_xpath(value)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 293, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 752, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='js-main-page-content']/div[2]/ul/li/a/span"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2176_5444}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 22cebc3e9c66883ae4e5b2bc02662f4b
+*** Element info: {Using=xpath, value=.//*[@id='js-main-page-content']/div[2]/ul/li/a/span}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_case.main_page_menu_forward_test.MainPageForwardTest: mp 登录首页按钮页面跳转检查</td>
+    <td>5</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5</td>
+    <td><a href="javascript:showClassDetail('c4',5)">Detail</a></td>
+</tr>
+
+<tr id='ft4.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_012_forward_send_all: 用例编号012：mp登录后，通过点击蓝凌软件群发功能全新上线跳转到群发消息界面</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.1')" >
+        error</a>
+
+    <div id='div_ft4.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.1: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\main_page_menu_forward_test.py", line 20, in test_012_forward_send_all
+    MainPage(self.driver).get_mp_note_btn().click()
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\main_page.py", line 82, in get_mp_note_btn
+    return self.find_element(self.mp_note_loc)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 49, in find_element
+    return getElement(by, self.driver, value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\page_function.py", line 41, in getElement
+    return driver.find_element_by_xpath(value)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 293, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 752, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='js-main-page-content']/div[2]/ul/li/a/span"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2040_23586}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 1e43bf9a12e63715bb8e2b22af193c38
+*** Element info: {Using=xpath, value=.//*[@id='js-main-page-content']/div[2]/ul/li/a/span}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft4.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_013_forward_customed_menu: 用例编号013：mp登录后，通过点击自定义菜单跳转到自定义菜单界面</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.2')" >
+        error</a>
+
+    <div id='div_ft4.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.2: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\main_page_menu_forward_test.py", line 32, in test_013_forward_customed_menu
+    MainPage(self.driver).get_custom_menu_btn().click()
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\main_page.py", line 75, in get_custom_menu_btn
+    return self.find_element(self.mp_custom_menu_loc)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 49, in find_element
+    return getElement(by, self.driver, value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\page_function.py", line 35, in getElement
+    return driver.find_element_by_link_text(value)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 317, in find_element_by_link_text
+    return self.find_element(by=By.LINK_TEXT, value=link_text)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 752, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"èªå®ä¹èå"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2148_14963}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 07ad88666212a68fc4989e15e7299799
+*** Element info: {Using=link text, value=èªå®ä¹èå}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText (RemoteWebDriver.java:397)
+    at org.openqa.selenium.By$ByLinkText.findElement (By.java:243)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft4.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_014_forward_follow_feedback: 用例编号014：mp登录后，通过点击关注时回复跳转到关注回复设置界面</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.3')" >
+        error</a>
+
+    <div id='div_ft4.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.3: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\main_page_menu_forward_test.py", line 44, in test_014_forward_follow_feedback
+    MainPage(self.driver).get_mp_feedback_btn().click()
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\main_page.py", line 68, in get_mp_feedback_btn
+    return self.find_element(self.mp_feedback_loc)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 49, in find_element
+    return getElement(by, self.driver, value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\page_function.py", line 35, in getElement
+    return driver.find_element_by_link_text(value)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 317, in find_element_by_link_text
+    return self.find_element(by=By.LINK_TEXT, value=link_text)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 752, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"å³æ³¨æ¶åå¤"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir2988_32160}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6ef95a4e9048ec60b22fa0f363dd91b6
+*** Element info: {Using=link text, value=å³æ³¨æ¶åå¤}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText (RemoteWebDriver.java:397)
+    at org.openqa.selenium.By$ByLinkText.findElement (By.java:243)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft4.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_015_forward_keyword_feedback: 用例编号015：mp登录后，通过点击关键字回复跳转到关键字回复设置界面</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.4')" >
+        error</a>
+
+    <div id='div_ft4.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.4: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\main_page_menu_forward_test.py", line 56, in test_015_forward_keyword_feedback
+    MainPage(self.driver).get_mp_keyword_feedback_btn().click()
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\main_page.py", line 61, in get_mp_keyword_feedback_btn
+    return self.find_element(self.mp_keyword_loc)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 49, in find_element
+    return getElement(by, self.driver, value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\page_function.py", line 35, in getElement
+    return driver.find_element_by_link_text(value)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 317, in find_element_by_link_text
+    return self.find_element(by=By.LINK_TEXT, value=link_text)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 752, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"å³é®å­åå¤"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir900_10223}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 0fc42f9cd56a545ce7984ad37f1c1f26
+*** Element info: {Using=link text, value=å³é®å­åå¤}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText (RemoteWebDriver.java:397)
+    at org.openqa.selenium.By$ByLinkText.findElement (By.java:243)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft4.5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_016_forwad_unrecognized_feedback: 用例编号016：mp登录后，通过点击无法失败回复跳转到无法识别回复设置界面</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.5')" >
+        error</a>
+
+    <div id='div_ft4.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.5: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\main_page_menu_forward_test.py", line 68, in test_016_forwad_unrecognized_feedback
+    MainPage(self.driver).get_mp_unrecognized_btn().click()
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\main_page.py", line 54, in get_mp_unrecognized_btn
+    return self.find_element(self.mp_unrecognized_loc)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 49, in find_element
+    return getElement(by, self.driver, value)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\page_function.py", line 35, in getElement
+    return driver.find_element_by_link_text(value)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 317, in find_element_by_link_text
+    return self.find_element(by=By.LINK_TEXT, value=link_text)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 752, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-2.53.6-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"æ æ³è¯å«åå¤"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir3384_4164}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 93795c9821af6775d3177e184c4465f5
+*** Element info: {Using=link text, value=æ æ³è¯å«åå¤}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText (RemoteWebDriver.java:397)
+    at org.openqa.selenium.By$ByLinkText.findElement (By.java:243)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.GeneratedMethodAccessor129.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_case.source_manage_test.SourceManageTest: mp 登录首页素材管理测试</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c5',1)">Detail</a></td>
+</tr>
+
+<tr id='ft5.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_017_page_text: 用例编号017：mp登录后，创建单图文素材</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.1')" >
+        error</a>
+
+    <div id='div_ft5.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.1: Traceback (most recent call last):
+  File "D:\PycharmProjects\kk_mp\mp\test_model\test_case\source_manage_test.py", line 22, in test_017_page_text
+    MenulistPage(self.driver).click_mp_source_manage_btn()
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\menulist_page.py", line 35, in click_mp_source_manage_btn
+    self.get_mp_source_manage_btn().click()
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\menulist_page.py", line 31, in get_mp_source_manage_btn
+    return self.find_element(self.mp_source_manage_loc)
+  File "D:\PycharmProjects\kk_mp\mp\test_model\page_obj\base_page.py", line 47, in find_element
+    by = loc[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>17</td>
+    <td>0</td>
+    <td>0</td>
+    <td>17</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>
