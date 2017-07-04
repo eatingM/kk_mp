@@ -44,7 +44,7 @@ class MyTest(unittest.TestCase):
             logger.info(u"正在尝试登录中...")
         except Exception as e:
             logger.error(u"登录失败！")
-            logger.error(str(e))
+            logger.error(u"系统抛出异常:%s" % str(e))
 
     def user_normal_login(self, casenumber):
         """
@@ -59,7 +59,7 @@ class MyTest(unittest.TestCase):
             logger.info(u"正在尝试登录中... ")
         except Exception as e:
             logger.error(u"登录失败！")
-            logger.error(str(e))
+            logger.error(u"系统抛出异常:%s" % str(e))
 
     def tearDown(self):
         """

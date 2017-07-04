@@ -19,16 +19,19 @@ class LoginPage(Page):
 
     """
     logger = logging.getLogger("main.loginpage")
-    mp_login_usr_loc = get_page_element(xml_list[1], "mp_login_usr_loc")
-    mp_login_usr_paw_loc = get_page_element(xml_list[1], "mp_login_usr_paw_loc")
-    mp_login_btn_loc = get_page_element(xml_list[1], "mp_login_btn_loc")
-    mp_usr_error_hint_loc = get_page_element(xml_list[1], "mp_usr_error_hint_loc")
-    mp_pwd_error_hint_loc = get_page_element(xml_list[1], "mp_pwd_error_hint_loc")
-    mp_usr_empty_hint_loc = get_page_element(xml_list[1], "mp_usr_empty_hint_loc")
-    mp_pwd_empty_hint_loc = get_page_element(xml_list[1], "mp_pwd_empty_hint_loc")
-    mp_unbound_user_hint_loc = get_page_element(xml_list[1], "mp_unbound_user_hint_loc")
-    mp_invalid_usr_hint_loc = get_page_element(xml_list[1], "mp_invalid_usr_hint_loc")
-    mp_login_success_hint_loc = get_page_element(xml_list[1], "mp_login_success_hint_loc")
+    try:
+        mp_login_usr_loc = get_page_element(xml_list[1], "mp_login_usr_loc")
+        mp_login_usr_paw_loc = get_page_element(xml_list[1], "mp_login_usr_paw_loc")
+        mp_login_btn_loc = get_page_element(xml_list[1], "mp_login_btn_loc")
+        mp_usr_error_hint_loc = get_page_element(xml_list[1], "mp_usr_error_hint_loc")
+        mp_pwd_error_hint_loc = get_page_element(xml_list[1], "mp_pwd_error_hint_loc")
+        mp_usr_empty_hint_loc = get_page_element(xml_list[1], "mp_usr_empty_hint_loc")
+        mp_pwd_empty_hint_loc = get_page_element(xml_list[1], "mp_pwd_empty_hint_loc")
+        mp_unbound_user_hint_loc = get_page_element(xml_list[1], "mp_unbound_user_hint_loc")
+        mp_invalid_usr_hint_loc = get_page_element(xml_list[1], "mp_invalid_usr_hint_loc")
+        mp_login_success_hint_loc = get_page_element(xml_list[1], "mp_login_success_hint_loc")
+    except Exception as e:
+        logger.error(u"系统抛出异常:%s" % str(e))
 
     # Action
 
@@ -44,9 +47,8 @@ class LoginPage(Page):
             logger.info(u"向登录的用户名输入框输入：%s" % username)
             login_input.send_keys(username)
         except Exception as e:
-            logger.error(u"向登录的用户名输入框输入失败！" )
-            logger.error(str(e))
-
+            logger.error(u"向登录的用户名输入框输入失败！")
+            logger.error(u"系统抛出异常:%s" % str(e))
 
     def input_login_password(self, password):
         """
@@ -55,15 +57,21 @@ class LoginPage(Page):
         :return:
         """
         # input password
-        self.find_element(self.mp_login_usr_paw_loc).send_keys(password)
-        logger.info(u"向登录的密码输入框输入 %s" % password)
+        try:
+            self.find_element(self.mp_login_usr_paw_loc).send_keys(password)
+            logger.info(u"向登录的密码输入框输入 %s" % password)
+        except Exception as e:
+            logger.error(u"系统抛出异常:%s" % str(e))
 
     def click_login_button(self):
         """
         点击登录界面的登录按钮
         :return:
         """
-        self.find_element(self.mp_login_btn_loc).click()
+        try:
+            self.find_element(self.mp_login_btn_loc).click()
+        except Exception as e:
+            logger.error(u"系统抛出异常:%s" % str(e))
 
     def get_login_button(self):
         """

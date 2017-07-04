@@ -15,6 +15,7 @@ xml_list = [xml_Page_data_dir, xml_Page_element_dir]
 
 logger = logging.getLogger("main.page_function")
 
+
 def getElement(by,driver,value):
 
         """
@@ -61,8 +62,7 @@ def get_test_data(xml_path, test_number, test_attribute):
         return test_cases[test_number-1].getAttribute(test_attribute)
     except Exception as e:
         logger.error(u"读取测试数据失败！")
-        logger.error(str(e))
-
+        logger.error(u"系统抛出异常:%s" % str(e))
 
 
 def get_page_element(xml_path, element_name):
@@ -87,8 +87,8 @@ def get_page_element(xml_path, element_name):
         logger.info(u"定位%s元素的值为:%s" % (element_name,element.getAttribute("loc")))
         return list
     except Exception as e:
-        logger.error(u"找不到元素： %s"% element_name)
-        logger.error(str(e))
+        logger.error(u"找不到元素： %s" % element_name)
+        logger.error(u"系统抛出异常:%s" % str(e))
 
 
 def get_login_username(case_number):
@@ -97,8 +97,11 @@ def get_login_username(case_number):
     :param case_number:
     :return:
     """
-    username = get_test_data(xml_list[0], case_number, "username")
-    return username
+    try:
+        username = get_test_data(xml_list[0], case_number, "username")
+        return username
+    except Exception as e:
+        logger.error(u"系统抛出异常:%s" % str(e))
 
 
 def get_login_password(case_number):
@@ -107,9 +110,11 @@ def get_login_password(case_number):
     :param case_number:
     :return:
     """
-    password = get_test_data(xml_list[0], case_number, "password")
-    #logger.info(u"读取测试数据中... 读取路径为:%s ,用例编号为%s,读取到的用户密码为:%s"%(xml_list[0], case_number,password))
-    return password
+    try:
+        password = get_test_data(xml_list[0], case_number, "password")
+        return password
+    except Exception as e:
+        logger.error(u"系统抛出异常:%s" % str(e))
 
 
 def get_expected_value(case_number):
@@ -124,8 +129,7 @@ def get_expected_value(case_number):
         return expected_value
     except Exception as e:
         logger.error(u"测试数据期望值读取失败！")
-        logger.error(str(e))
-
+        logger.error(u"系统抛出异常:%s" % str(e))
 
 
 def get_image_title(case_number):
@@ -140,7 +144,7 @@ def get_image_title(case_number):
         return image_title
     except Exception as e:
         logger.error(u"测试数据截图名称读取失败！")
-        logger.error(str(e))
+        logger.error(u"系统抛出异常:%s" % str(e))
 
 
 if __name__ =="__main__":

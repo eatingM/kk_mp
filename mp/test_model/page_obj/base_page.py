@@ -62,7 +62,10 @@ class Page(object):
         :param url:
         :return:
         """
-        self._open(url)
+        try:
+            self._open(url)
+        except Exception as e:
+            logger.error(u"系统抛出异常:%s" % str(e))
 
     def on_page(self, url):
         """

@@ -17,17 +17,20 @@ class MainPage(Page):
     """
     # Element loc
 
-    mp_quict_loc = get_page_element(xml_list[1], "mp_quict_loc")
-    mp_custom_menu_loc = get_page_element(xml_list[1], "mp_custom_menu_loc")
-    mp_feedback_loc = get_page_element(xml_list[1], "mp_feedback_loc")
-    mp_keyword_loc = get_page_element(xml_list[1], "mp_keyword_loc")
-    mp_unrecognized_loc = get_page_element(xml_list[1], "mp_unrecognized_loc")
-    mp_timestamp_loc = get_page_element(xml_list[1], "mp_timestamp_loc")
-    mp_main_page_loc = get_page_element(xml_list[1], "mp_main_page_loc")
-    mp_service_name_loc = get_page_element(xml_list[1], "mp_service_name_loc")
-    mp_service_id_loc = get_page_element(xml_list[1], "mp_service_id_loc")
-    mp_note_loc = get_page_element(xml_list[1], "mp_note_loc")
-    mp_send_all_loc = get_page_element(xml_list[1], "mp_send_all_loc")
+    try:
+        mp_quict_loc = get_page_element(xml_list[1], "mp_quict_loc")
+        mp_custom_menu_loc = get_page_element(xml_list[1], "mp_custom_menu_loc")
+        mp_feedback_loc = get_page_element(xml_list[1], "mp_feedback_loc")
+        mp_keyword_loc = get_page_element(xml_list[1], "mp_keyword_loc")
+        mp_unrecognized_loc = get_page_element(xml_list[1], "mp_unrecognized_loc")
+        mp_timestamp_loc = get_page_element(xml_list[1], "mp_timestamp_loc")
+        mp_main_page_loc = get_page_element(xml_list[1], "mp_main_page_loc")
+        mp_service_name_loc = get_page_element(xml_list[1], "mp_service_name_loc")
+        mp_service_id_loc = get_page_element(xml_list[1], "mp_service_id_loc")
+        mp_note_loc = get_page_element(xml_list[1], "mp_note_loc")
+        mp_send_all_loc = get_page_element(xml_list[1], "mp_send_all_loc")
+    except Exception as e:
+            logger.error(u"系统抛出异常:%s" % str(e))
 
     # Action
 

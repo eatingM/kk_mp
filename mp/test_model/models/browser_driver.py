@@ -28,7 +28,7 @@ def set_param(browser):
         return driver
     except Exception as e:
         logger.error(u"主机配置失败！Selenium Server未启动！")
-        logger.error(str(e))
+        logger.error(u"系统抛出异常:%s" % str(e))
 
 
 def chrome_browser():
@@ -42,7 +42,7 @@ def chrome_browser():
         return dr
     except Exception as e:
         logger.error("指定浏览器失败！")
-        logger.error(str(e))
+        logger.error(u"系统抛出异常:%s" % str(e))
 
 
 
@@ -57,7 +57,7 @@ def firefox_browser():
         return dr
     except Exception as e:
         logger.error("指定浏览器失败！")
-        logger.error(str(e))
+        logger.error(u"系统抛出异常:%s" % str(e))
 
 def ie_browser():
     """
@@ -70,7 +70,7 @@ def ie_browser():
         return dr
     except Exception as e:
         logger.error("指定浏览器失败！")
-        logger.error(str(e))
+        logger.error(u"系统抛出异常:%s" % str(e))
 
 
 if __name__ == "__main__":
