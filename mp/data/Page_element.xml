@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<mp>
+    <!--login_page-->
+	<!--登录界面：用户名输入框-->
+	<mp_login_usr_loc loc_by = "xpath" loc = ".//*[@id='loginName']"/>
+	
+	<!--登录界面：密码输入框-->
+	<mp_login_usr_paw_loc loc_by = "xpath" loc = ".//*[@id='password']"/>
+	<!--登录界面：登录按钮-->
+	<mp_login_btn_loc loc_by = "xpath" loc =".//*[@id='js-login-form']/div[4]/button"/>
+	
+	<!--登录界面：用户名错误提示-->
+	<mp_usr_error_hint_loc loc_by = "xpath" loc =".//*[@id='js-login-form']/div[3]"/>
+	
+	<!--登录界面：密码错误提示-->
+	<mp_pwd_error_hint_loc loc_by = "xpath" loc =".//*[@id='js-login-form']/div[3]"/>
+	
+	<!--登录界面：此运营人员没有关联公众号，请关联后操作提示-->
+	<mp_unbound_user_hint_loc loc_by = "xpath" loc =".//*[@id='js-login-form']/div[3]"/>
+	
+	<!--登录界面：用户名为空提示-->
+	<mp_usr_empty_hint_loc loc_by = "xpath" loc ="html/body/div[4]/div/table/tbody/tr[2]/td/div"/>
+	
+	<!--登录界面：密码为空提示-->
+	<mp_pwd_empty_hint_loc loc_by = "xpath" loc ="html/body/div[4]/div/table/tbody/tr[2]/td/div"/>
+	
+	<!--登录界面：此运营人员不存在提示-->
+	<mp_invalid_usr_hint_loc loc_by = "xpath" loc =".//*[@id='js-login-form']/div[3]"/>
+	
+	
+	<!--main page-->
+	<!--mp 首页-->
+	<mp_login_success_hint_loc loc_by= "xpath" loc="html/body/div[1]/div/ul/li[2]/a"/>
+	
+	<!--mp 首页退出按钮-->
+	<mp_quict_loc loc_by= "linktext" loc="退出"/>
+	
+	<!--mp 首页:自定义菜单按钮-->
+	<mp_custom_menu_loc loc_by="linktext" loc="自定义菜单"/>
+	
+	<!--mp 首页:关注时回复按钮-->
+	<mp_feedback_loc loc_by = "linktext" loc="关注时回复"/>
+	
+	<!--mp 首页:关键字回复按钮-->
+	<mp_keyword_loc loc_by = "linktext" loc="关键字回复"/>
+	
+	
+	<!--mp 首页:无法识别回复按钮-->
+	<mp_unrecognized_loc loc_by = "linktext" loc="无法识别回复"/>
+
+	<!--mp 首页:时间显示-->
+	<mp_timestamp_loc loc_by = "xpath" loc=".//*[@id='js-main-page-content']/div[2]/ul/li/time"/>
+	
+	<!--mp 首页:位置显示-->
+	<mp_main_page_loc loc_by = "xpath" loc="html/body/div[2]/div/div[2]/ol/li"/>
+	
+	
+	<!--mp 首页:公众号名称显示-->
+	<mp_service_name_loc loc_by = "xpath" loc=".//*[@id='js-main-page-content']/div[1]/div[1]/div/h4"/>
+	
+	<!--mp 首页:公众号id显示-->
+	<mp_service_id_loc loc_by = "xpath" loc=".//*[@id='js-main-page-content']/div[1]/div[1]/div/p"/>
+	
+	<!--mp 首页:公众号公告显示-->
+	<mp_note_loc loc_by = "xpath" loc=".//*[@id='js-main-page-content']/div[2]/ul/li/a/span"/>
+	
+	<!--mp 首页:群发消息按钮-->
+	<mp_send_all_loc loc_by = "xpath" loc="html/body/div[2]/div/div[2]/ol/li[2]"/>
+	
+	<!--mp 自定义菜单界面:菜单管理-->
+	<mp_custom_menu_manage_loc loc_by = "xpath" loc=".//*[@id='custom-menu-content']/ol/li[1]"/>
+	
+	<!--mp 关注时回复界面:关注时回复-->
+	<mp_feedback_manage_loc loc_by = "xpath" loc="html/body/div[2]/div/div[2]/ol/li[2]"/>
+	
+	<!--mp 关键字回复界面:关键字回复-->
+	<mp_keyword_manage_loc loc_by = "xpath" loc="html/body/div[2]/div/div[2]/ol/li[2]"/>
+	
+	<!--mp 无法识别回复界面:无法识别回复-->
+	<mp_unrecognized_manage_loc loc_by = "xpath" loc="html/body/div[2]/div/div[2]/ol/li[2]"/>
+	
+	<!--mp 左侧管理界面:基础管理-->
+	
+	
+	
+
+	
+</mp>

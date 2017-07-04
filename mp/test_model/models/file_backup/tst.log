@@ -1,0 +1,61 @@
+2017-07-03 11:29:01,957 - [file:main.py]-[func:<module>]-[line:12] - INFO: test main logger
+2017-07-03 11:29:01,957 - [file:main.py]-[func:<module>]-[line:13] - INFO: start import module 'mod'...
+2017-07-03 11:29:02,418 - [file:main.py]-[func:<module>]-[line:16] - DEBUG: let's test browser_driver.testLogger()
+2017-07-03 11:30:16,509 - [file:main.py]-[func:<module>]-[line:12] - INFO: test main logger
+2017-07-03 11:30:16,509 - [file:main.py]-[func:<module>]-[line:13] - INFO: start import module 'mod'...
+2017-07-03 11:30:17,213 - [file:main.py]-[func:<module>]-[line:16] - DEBUG: let's test browser_driver.testLogger()
+2017-07-03 11:30:39,592 - [file:main.py]-[func:<module>]-[line:12] - INFO: test main logger
+2017-07-03 11:30:39,592 - [file:main.py]-[func:<module>]-[line:13] - INFO: start import module 'mod'...
+2017-07-03 11:30:40,042 - [file:main.py]-[func:<module>]-[line:16] - DEBUG: let's test browser_driver.testLogger()
+2017-07-03 11:32:29,471 - [file:main.py]-[func:<module>]-[line:12] - INFO: test main logger
+2017-07-03 11:32:29,473 - [file:main.py]-[func:<module>]-[line:13] - INFO: start import module 'mod'...
+2017-07-03 11:32:29,717 - [file:main.py]-[func:<module>]-[line:16] - DEBUG: let's test browser_driver.testLogger()
+2017-07-03 11:33:46,323 - [file:main.py]-[func:<module>]-[line:12] - INFO: test main logger
+2017-07-03 11:33:46,325 - [file:main.py]-[func:<module>]-[line:13] - INFO: start import module 'mod'...
+2017-07-03 11:33:46,694 - [file:main.py]-[func:<module>]-[line:16] - DEBUG: let's test browser_driver.testLogger()
+2017-07-03 11:36:28,210 -main- [file:main.py]-[func:<module>]-[line:12] - INFO: test main logger
+2017-07-03 11:36:28,211 -main- [file:main.py]-[func:<module>]-[line:13] - INFO: start import module 'mod'...
+2017-07-03 11:36:28,529 -main- [file:main.py]-[func:<module>]-[line:16] - DEBUG: let's test browser_driver.testLogger()
+2017-07-03 13:45:51,556 -main- [file:main.py]-[func:<module>]-[line:12] - INFO: test main logger
+2017-07-03 13:45:51,556 -main- [file:main.py]-[func:<module>]-[line:13] - INFO: start import module 'mod'...
+2017-07-03 13:45:51,782 -main- [file:main.py]-[func:<module>]-[line:16] - DEBUG: let's test browser_driver.testLogger()
+2017-07-03 13:45:57,496 -main- [file:logger.py]-[func:debug]-[line:46] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 13:50:05,029 -main- [file:main.py]-[func:<module>]-[line:12] - INFO: test main logger
+2017-07-03 13:50:05,029 -main- [file:main.py]-[func:<module>]-[line:13] - INFO: start import module 'mod'...
+2017-07-03 13:50:05,243 -main- [file:main.py]-[func:<module>]-[line:16] - DEBUG: let's test browser_driver.testLogger()
+2017-07-03 13:50:09,861 -main.mod- [file:browser_driver.py]-[func:set_param]-[line:24] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 13:51:22,976 -main- [file:main.py]-[func:<module>]-[line:12] - INFO: test main logger
+2017-07-03 13:51:22,976 -main- [file:main.py]-[func:<module>]-[line:13] - INFO: start import module 'mod'...
+2017-07-03 13:51:23,221 -main- [file:main.py]-[func:<module>]-[line:16] - DEBUG: let's test browser_driver.testLogger()
+2017-07-03 13:51:28,036 -main.mod- [file:browser_driver.py]-[func:set_param]-[line:24] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 13:54:57,634 -main- [file:main.py]-[func:<module>]-[line:12] - INFO: test main logger
+2017-07-03 13:54:57,634 -main- [file:main.py]-[func:<module>]-[line:13] - INFO: start import module 'mod'...
+2017-07-03 13:54:57,884 -main- [file:main.py]-[func:<module>]-[line:16] - DEBUG: let's test browser_driver.testLogger()
+2017-07-03 13:55:02,654 -main.mod- [file:browser_driver.py]-[func:set_param]-[line:25] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 14:00:39,234 -main- [file:main.py]-[func:<module>]-[line:12] - INFO: test main logger
+2017-07-03 14:00:39,234 -main- [file:main.py]-[func:<module>]-[line:13] - INFO: start import module 'mod'...
+2017-07-03 14:00:39,506 -main- [file:main.py]-[func:<module>]-[line:16] - DEBUG: let's test browser_driver.testLogger()
+2017-07-03 14:00:44,230 -main.browser_driver- [file:browser_driver.py]-[func:set_param]-[line:23] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 14:03:20,987 -main- [file:main.py]-[func:<module>]-[line:16] - DEBUG: let's test browser_driver.testLogger()
+2017-07-03 14:03:25,638 -main.browser_driver- [file:browser_driver.py]-[func:set_param]-[line:24] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 14:03:30,453 -main.browser_driver- [file:browser_driver.py]-[func:set_param]-[line:24] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 14:03:30,453 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser]-[line:35] - INFO: 指定浏览器为chrome
+2017-07-03 14:06:44,743 -main- [file:main.py]-[func:<module>]-[line:16] - DEBUG: let's test browser_driver.testLogger()
+2017-07-03 14:06:49,275 -main.browser_driver- [file:browser_driver.py]-[func:set_param]-[line:24] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 14:06:53,967 -main.browser_driver- [file:browser_driver.py]-[func:set_param]-[line:24] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 14:06:53,967 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser]-[line:35] - INFO: 指定浏览器为chrome
+2017-07-03 14:14:25,976 -main- [file:main.py]-[func:<module>]-[line:16] - DEBUG: let's test browser_driver.testLogger()
+2017-07-03 14:14:30,891 -main.browser_driver- [file:browser_driver.py]-[func:set_param]-[line:23] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 14:14:36,128 -main.browser_driver- [file:browser_driver.py]-[func:set_param]-[line:23] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 14:14:36,130 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser]-[line:34] - INFO: 指定浏览器为chrome
+2017-07-03 14:15:30,423 -main.browser_driver- [file:browser_driver.py]-[func:set_param]-[line:23] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 14:15:35,668 -main.browser_driver- [file:browser_driver.py]-[func:set_param]-[line:23] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 14:15:35,668 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser]-[line:34] - INFO: 指定浏览器为chrome
+2017-07-03 14:18:00,734 -main.browser_driver- [file:browser_driver.py]-[func:set_param]-[line:23] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 14:18:06,841 -main.browser_driver- [file:browser_driver.py]-[func:set_param]-[line:23] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 14:18:06,842 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser]-[line:34] - INFO: 指定浏览器为chrome
+2017-07-03 14:18:32,523 -main.browser_driver- [file:browser_driver.py]-[func:set_param]-[line:23] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 14:18:32,523 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser]-[line:34] - INFO: 指定浏览器为chrome
+2017-07-03 14:18:45,756 -main.browser_driver- [file:browser_driver.py]-[func:set_param]-[line:23] - DEBUG: 配置的主机为：http://127.0.0.1:5555/wd/hub 
+2017-07-03 14:18:45,756 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser]-[line:34] - INFO: 指定浏览器为chrome
+2017-07-03 14:18:50,072 -main.browser_driver.base_function- [file:base_function.py]-[func:insert_img]-[line:35] - INFO: 生成截图文件:D:\PycharmProjects\kk_mp\mp\report\image\test_0615.jpg
