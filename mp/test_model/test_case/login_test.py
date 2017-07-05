@@ -22,20 +22,27 @@ class LoginTest(MyTest):
 
     def test_001_login(self):
         """ 用例编号001：mp登录-用户名、密码为空 """
-        logger.info(u"开始执行测试用例：用例编号001：mp登录-用户名、密码为空")
-        logger.info(u"开始登录操作...")
-        self.user_normal_login(001)
+        logger.info("开始执行测试用例：用例编号001：mp登录-用户名、密码为空")
+        logger.info("开始登录mp...")
+        logger.info("测试判断是否成功登录mp...")
+        self.assertTrue(self.user_normal_login(001))
+
+        logger.info("mp登录成功！")
         expected_value = get_expected_value(001)
+        logger.info("获得用例期望值成功！")
         title = get_image_title(001)
-        logger.info(u"测试判断:%s 是否等于:%s" % (self.get_login_page().get_usr_empty_hint(), expected_value))
+        logger.info("获得截图标题成功！")
+        logger.info("测试判断:%s 是否等于:%s" % (self.get_login_page().get_usr_empty_hint(), expected_value))
         insert_img(self.driver, title)
+        logger.info("生成截图中...")
         self.assertEqual(self.get_login_page().get_usr_empty_hint(), expected_value)
 
     def test_002_login(self):
         """ 用例编号002：mp登录-用户名正确、密码为空 """
-        logger.info(u"开始执行测试用例：用例编号002：mp登录-用户名正确、密码为空")
-        logger.info(u"开始登录操作...")
-        self.user_normal_login(002)
+        logger.info("开始执行测试用例：用例编号002：mp登录-用户名正确、密码为空")
+        logger.info("开始登录mp...")
+        self.assertTrue(self.user_normal_login(002))
+        logger.info("mp登录成功！")
         expected_value = get_expected_value(002)
         self.assertEqual(self.get_login_page().get_pwd_empty_hint(), expected_value)
         logger.info(u"测试判断:%s 是否等于:%s" % (self.get_login_page().get_pwd_empty_hint(), expected_value))
@@ -46,7 +53,8 @@ class LoginTest(MyTest):
         """ 用例编号003：mp登录-用户名正确、未绑定公众号 """
         logger.info(u"开始执行测试用例：用例编号003：mp登录-用户名正确、未绑定公众号")
         logger.info(u"开始登录操作...")
-        self.user_normal_login(003)
+        self.assertTrue(self.user_normal_login(003))
+        logger.info("mp登录成功！")
         expected_value = get_expected_value(003)
         actual_value = self.get_login_page().get_unbound_user_hint()
         title = get_image_title(003)
@@ -60,7 +68,8 @@ class LoginTest(MyTest):
         """ 用例编号004：mp登录-运营人员不存在 """
         logger.info(u"开始执行测试用例：用例编号004：mp登录-运营人员不存在")
         logger.info(u"开始登录操作...")
-        self.user_normal_login(004)
+        self.assertTrue(self.user_normal_login(004))
+        logger.info("mp登录成功！")
         expected_value = get_expected_value(004)
         self.assertEqual(self.get_login_page().get_invalid_usr_hint(), expected_value)
         logger.info(u"测试判断:%s 是否等于:%s" %(self.get_login_page().get_invalid_usr_hint(), expected_value))
@@ -71,7 +80,8 @@ class LoginTest(MyTest):
         """ 用例编号005：mp登录-用户名或密码错误 """
         logger.info(u"开始执行测试用例：用例编号005：mp登录-用户名或密码错误 ")
         logger.info(u"开始登录操作...")
-        self.user_normal_login(005)
+        self.assertTrue(self.user_normal_login(005))
+        logger.info("mp登录成功！")
         expected_value = get_expected_value(005)
         self.assertEqual(self.get_login_page().get_pwd_error_hint(), expected_value)
         logger.info(u"测试判断:%s 是否等于:%s" %(self.get_login_page().get_pwd_error_hint(), expected_value))
@@ -82,7 +92,8 @@ class LoginTest(MyTest):
         """ 用例编号006：mp登录-用户名密码正确，且绑定了公众号 """
         logger.info(u"开始执行测试用例：用例编号006：mp登录-用户名密码正确，且绑定了公众号 ")
         logger.info(u"开始登录操作...")
-        self.user_normal_login(006)
+        self.assertTrue(self.user_normal_login(006))
+        logger.info("mp登录成功！")
         expected_value = get_expected_value(006)
         self.assertEqual(self.get_login_page().get_login_success_hint(), expected_value)
         logger.info(u"测试判断:%s 是否等于:%s" %(self.get_login_page().get_login_success_hint(), expected_value))

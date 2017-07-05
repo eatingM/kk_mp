@@ -7,7 +7,7 @@ from mp.test_model.models.my_logger import *
 
 
 class Page(object):
-    mp_url = "http://192.168.2.43:8050/WxMgr/webconsole"
+    mp_url = "http://192.168.2.106:8050/WxMgr/webconsole"
 
     logger = logging.getLogger("main.base_page")
 
@@ -46,7 +46,8 @@ class Page(object):
         """
         by = loc[0]
         value = loc[1]
-        return getElement(by, self.driver, value)
+        result = getElement(by, self.driver, value)
+        return result
 
     def find_elements(self, loc):
         """
@@ -62,10 +63,7 @@ class Page(object):
         :param url:
         :return:
         """
-        try:
-            self._open(url)
-        except Exception as e:
-            logger.error(u"系统抛出异常:%s" % str(e))
+        self._open(url)
 
     def on_page(self, url):
         """

@@ -34,7 +34,7 @@ def insert_img(driver, file_name):
         logger.info(u"生成截图文件:%s" % file_path)
     except Exception as e:
         logger.error(u"生成截图文件失败！")
-        logger.error(str(e))
+        logger.error("系统抛出异常：%s" % str(e))
 
 
 def read_xml(xml_file):
@@ -44,14 +44,10 @@ def read_xml(xml_file):
     :return root
 
     """
-    try:
-        dom = minidom.parse(xml_file)
-        root = dom.documentElement
-        logger.info(u"打开%s文件读取..." % xml_file)
-        return root
-    except Exception as e:
-        logger.error(u"%s文件读取失败!" % xml_file)
-        logger.error(str(e))
+    dom = minidom.parse(xml_file)
+    root = dom.documentElement
+    logger.info(u"打开%s文件读取..." % xml_file)
+    return root
 
 
 def get_test_number(test_number):
@@ -61,13 +57,9 @@ def get_test_number(test_number):
     :param test_number:
     :return:
     """
-    try:
-        test_number = str(test_number)
-        result = re.sub(r"\b0*([1-9][0-9]*|0)", r"\1", test_number)
-        return int(result)
-    except Exception as e:
-        logger.error(u"输入的测试用例编号%s 异常，请检查后再次输入！" % test_number)
-        logger.error(u"系统抛出异常:%s" % str(e))
+    test_number = str(test_number)
+    result = re.sub(r"\b0*([1-9][0-9]*|0)", r"\1", test_number)
+    return int(result)
 
 
 if __name__ == '__main__':

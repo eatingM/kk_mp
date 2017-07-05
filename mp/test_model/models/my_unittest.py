@@ -18,7 +18,9 @@ class MyTest(unittest.TestCase):
         :return:
         """
 
-        self.driver = chrome_browser()
+        (self.driver, flag) = chrome_browser()
+        self.assertTrue(flag)
+        self.assertTrue(flag)
         self.driver.implicitly_wait(10)
         self.driver.maximize_window()
         logger.info("浏览器窗口最大化...")
@@ -37,14 +39,18 @@ class MyTest(unittest.TestCase):
         定义登录成方法
         :return:
         """
+        flag = True
         try:
             username = get_login_username(006)
             password = get_login_password(006)
             self.user_login_(username, password)
             logger.info(u"正在尝试登录中...")
+            return flag
         except Exception as e:
-            logger.error(u"登录失败！")
+            logger.error(u"登录操作异常！")
             logger.error(u"系统抛出异常:%s" % str(e))
+            flag = False
+            return flag
 
     def user_normal_login(self, casenumber):
         """
@@ -52,22 +58,29 @@ class MyTest(unittest.TestCase):
         :param casenumber:
         :return:
         """
+        flag = True
         try:
             username = get_login_username(casenumber)
             password = get_login_password(casenumber)
             self.user_login_(username, password)
             logger.info(u"正在尝试登录中... ")
+            return flag
         except Exception as e:
-            logger.error(u"登录失败！")
+            logger.error(u"登录操作异常！")
             logger.error(u"系统抛出异常:%s" % str(e))
+            flag = False
+            return flag
 
     def tearDown(self):
         """
         每个测试用例执行完成后关闭掉driver
         :return:
         """
-        self.driver.quit()
-
+        try:
+            self.driver.quit()
+        except Exception as e:
+            logger.error(u"浏览器关闭操作异常！！")
+            logger.error(u"系统抛出异常:%s" % str(e))
 
 '''
 @author Mavis

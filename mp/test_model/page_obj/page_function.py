@@ -16,7 +16,7 @@ xml_list = [xml_Page_data_dir, xml_Page_element_dir]
 logger = logging.getLogger("main.page_function")
 
 
-def getElement(by,driver,value):
+def getElement(by, driver, value):
 
         """
         元素定位方法
@@ -24,6 +24,7 @@ def getElement(by,driver,value):
         :param value:  文本值
         :return:       查找到的元素
         """
+
         if by == "id":
             return driver.find_element_by_id(value)
         elif by == "class":
@@ -53,16 +54,13 @@ def get_test_data(xml_path, test_number, test_attribute):
     :param test_attribute:
     :return:
     """
-    try:
-        root = read_xml(xml_path)
-        test_cases = root.getElementsByTagName("test_case")
-        test_number = get_test_number(test_number)
-        logger.info(u"读取测试数据中... 读取路径为:%s ,用例编号为%s"% (xml_list[0], test_number))
-        logger.info(u"使用的测试数据属性为:%s, 读取到的测试数据值为:%s" % (test_attribute, test_cases[test_number-1].getAttribute(test_attribute)))
-        return test_cases[test_number-1].getAttribute(test_attribute)
-    except Exception as e:
-        logger.error(u"读取测试数据失败！")
-        logger.error(u"系统抛出异常:%s" % str(e))
+
+    root = read_xml(xml_path)
+    test_cases = root.getElementsByTagName("test_case")
+    test_number = get_test_number(test_number)
+    logger.info(u"读取测试数据中... 读取路径为:%s ,用例编号为%s"% (xml_list[0], test_number))
+    logger.info(u"使用的测试数据属性为:%s, 读取到的测试数据值为:%s" % (test_attribute, test_cases[test_number-1].getAttribute(test_attribute)))
+    return test_cases[test_number-1].getAttribute(test_attribute)
 
 
 def get_page_element(xml_path, element_name):
@@ -77,18 +75,15 @@ def get_page_element(xml_path, element_name):
     """
     root = read_xml(xml_path)
     list =[]
-    try:
-        element = root.getElementsByTagName(element_name)[0]
-        logger.info(u"定位元素中...")
-        logger.info(u"定位元素名称为：%s" % element_name)
-        list.append(element.getAttribute("loc_by"))
-        logger.info(u"定位%s元素的方式为： %s" % (element_name,element.getAttribute("loc_by")))
-        list.append(element.getAttribute("loc"))
-        logger.info(u"定位%s元素的值为:%s" % (element_name,element.getAttribute("loc")))
-        return list
-    except Exception as e:
-        logger.error(u"找不到元素： %s" % element_name)
-        logger.error(u"系统抛出异常:%s" % str(e))
+
+    element = root.getElementsByTagName(element_name)[0]
+    logger.info(u"定位元素中...")
+    logger.info(u"定位元素名称为：%s" % element_name)
+    list.append(element.getAttribute("loc_by"))
+    logger.info(u"定位%s元素的方式为： %s" % (element_name,element.getAttribute("loc_by")))
+    list.append(element.getAttribute("loc"))
+    logger.info(u"定位%s元素的值为:%s" % (element_name,element.getAttribute("loc")))
+    return list
 
 
 def get_login_username(case_number):
@@ -97,11 +92,9 @@ def get_login_username(case_number):
     :param case_number:
     :return:
     """
-    try:
-        username = get_test_data(xml_list[0], case_number, "username")
-        return username
-    except Exception as e:
-        logger.error(u"系统抛出异常:%s" % str(e))
+
+    username = get_test_data(xml_list[0], case_number, "username")
+    return username
 
 
 def get_login_password(case_number):
@@ -110,11 +103,9 @@ def get_login_password(case_number):
     :param case_number:
     :return:
     """
-    try:
-        password = get_test_data(xml_list[0], case_number, "password")
-        return password
-    except Exception as e:
-        logger.error(u"系统抛出异常:%s" % str(e))
+
+    password = get_test_data(xml_list[0], case_number, "password")
+    return password
 
 
 def get_expected_value(case_number):
@@ -123,13 +114,10 @@ def get_expected_value(case_number):
     :param case_number:
     :return:
     """
-    try:
-        expected_value = get_test_data(xml_list[0], case_number, "value")
-        logger.info(u"读取测试数据中... 读取路径为:%s ,用例编号为%s,读取到的测试期望值为:%s" % (xml_list[0], case_number, expected_value ))
-        return expected_value
-    except Exception as e:
-        logger.error(u"测试数据期望值读取失败！")
-        logger.error(u"系统抛出异常:%s" % str(e))
+
+    expected_value = get_test_data(xml_list[0], case_number, "value")
+    logger.info(u"读取测试数据中... 读取路径为:%s ,用例编号为%s,读取到的测试期望值为:%s" % (xml_list[0], case_number, expected_value ))
+    return expected_value
 
 
 def get_image_title(case_number):
@@ -138,13 +126,10 @@ def get_image_title(case_number):
     :param case_number:
     :return:
     """
-    try:
-        image_title = get_test_data(xml_list[0], case_number, "title")
-        logger.info(u"读取测试数据中... 读取路径为:%s ,用例编号为%s,读取到的截图名称为: %s" % (xml_list[0], case_number,image_title))
-        return image_title
-    except Exception as e:
-        logger.error(u"测试数据截图名称读取失败！")
-        logger.error(u"系统抛出异常:%s" % str(e))
+
+    image_title = get_test_data(xml_list[0], case_number, "title")
+    logger.info(u"读取测试数据中... 读取路径为:%s ,用例编号为%s,读取到的截图名称为: %s" % (xml_list[0], case_number,image_title))
+    return image_title
 
 
 if __name__ == "__main__":
