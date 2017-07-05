@@ -13,6 +13,7 @@ sys.setdefaultencoding('utf8')
 
 logger = logging.getLogger("main.run_test_mp")
 
+
 def send_mail(file_new):
     """
     1、 定义发送邮件

@@ -21,6 +21,18 @@ class SourceManageTest(MyTest):
         logger.info(u"测试判断:%s 是否等于:%s" % (SourceManagePage(self.driver).get_mp_source_manage_title(), expected_value))
         insert_img(self.driver, title)
 
+    def test_018_add_single_page_text(self):
+        """用例编号018：mp登录后，进入素材管理界面,进入新增单图文界面"""
+        logger.info(u"开始执行测试用例：用例编号018：mp登录后，进入素材管理界面,进入新增单图文界面")
+        logger.info(u"开始登录操作...")
+        self.user_login_success()
+        expected_value = get_expected_value("018")
+        SourceManagePage(self.driver).get_new_page_text_page()
+        title = get_image_title("018")
+        self.assertEqual(SourceManagePage(self.driver).get_add_new_single_page_text(), expected_value)
+        logger.info(u"测试判断:%s 是否等于:%s" % (SourceManagePage(self.driver).get_add_new_single_page_text(), expected_value))
+        insert_img(self.driver, title)
+
 
 
 '''

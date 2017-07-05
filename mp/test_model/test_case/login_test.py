@@ -5,6 +5,9 @@ from mp.test_model.models.my_unittest import *
 from mp.test_model.page_obj.loginPage import *
 from mp.test_model.page_obj.page_function import *
 from mp.test_model.models.my_logger import *
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 
 class LoginTest(MyTest):
@@ -24,9 +27,9 @@ class LoginTest(MyTest):
         self.user_normal_login(001)
         expected_value = get_expected_value(001)
         title = get_image_title(001)
-        self.assertEqual(self.get_login_page().get_usr_empty_hint(), expected_value)
         logger.info(u"测试判断:%s 是否等于:%s" % (self.get_login_page().get_usr_empty_hint(), expected_value))
         insert_img(self.driver, title)
+        self.assertEqual(self.get_login_page().get_usr_empty_hint(), expected_value)
 
     def test_002_login(self):
         """ 用例编号002：mp登录-用户名正确、密码为空 """
@@ -45,10 +48,13 @@ class LoginTest(MyTest):
         logger.info(u"开始登录操作...")
         self.user_normal_login(003)
         expected_value = get_expected_value(003)
-        self.assertEqual(self.get_login_page().get_unbound_user_hint(), expected_value)
-        logger.info(u"测试判断:%s 是否等于:%s" %(self.get_login_page().get_unbound_user_hint(), expected_value))
+        actual_value = self.get_login_page().get_unbound_user_hint()
         title = get_image_title(003)
         insert_img(self.driver,title)
+        logger.info(u"测试用例<003>执行后获得的测试实际值为:%s" % actual_value)
+        logger.info(u"断言测试用例<003>测试判断:%s 是否等于:%s" % (actual_value, expected_value))
+
+        self.assertEqual(self.get_login_page().get_unbound_user_hint(), expected_value)
 
     def test_004_login(self):
         """ 用例编号004：mp登录-运营人员不存在 """
