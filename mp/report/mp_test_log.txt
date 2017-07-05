@@ -3307,3 +3307,269 @@ Stacktrace:
 2017-07-04 17:25:17,671 -main.run_test_mp- [file:run_test_mp.py]-[func:<module>][line:84] - INFO: 开始执行...
 2017-07-04 17:25:19,423 -main.run_test_mp- [file:run_test_mp.py]-[func:send_mail][line:44] - ERROR: 邮件发送失败！
 2017-07-04 17:25:19,423 -main.run_test_mp- [file:run_test_mp.py]-[func:send_mail][line:45] - ERROR: 系统抛出异常:(535, 'Error: authentication failed')
+2017-07-05 15:17:53,773 -main.run_test_mp- [file:run_test_mp.py]-[func:<module>][line:65] - INFO: 开始执行测试用例...
+2017-07-05 15:17:53,773 -main.run_test_mp- [file:run_test_mp.py]-[func:<module>][line:70] - INFO: 正在生成测试报告：D:/PycharmProjects/kk_mp/mp/report/2017-07-05_15_17_53_result.html
+2017-07-05 15:17:53,775 -main.run_test_mp- [file:run_test_mp.py]-[func:<module>][line:81] - INFO: 正在组织测试用例...,测试用例路径为:D:/PycharmProjects/kk_mp/mp/test_model
+2017-07-05 15:17:54,068 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,068 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,069 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_login_usr_loc
+2017-07-05 15:17:54,069 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_login_usr_loc元素的方式为： xpath
+2017-07-05 15:17:54,069 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_login_usr_loc元素的值为:.//*[@id='loginName']
+2017-07-05 15:17:54,073 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,075 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,075 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_login_usr_paw_loc
+2017-07-05 15:17:54,075 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_login_usr_paw_loc元素的方式为： xpath
+2017-07-05 15:17:54,075 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_login_usr_paw_loc元素的值为:.//*[@id='password']
+2017-07-05 15:17:54,079 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,081 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,081 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_login_btn_loc
+2017-07-05 15:17:54,082 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_login_btn_loc元素的方式为： xpath
+2017-07-05 15:17:54,082 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_login_btn_loc元素的值为:.//*[@id='js-login-form']/div[4]/button
+2017-07-05 15:17:54,088 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,089 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,091 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_usr_error_hint_loc
+2017-07-05 15:17:54,091 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_usr_error_hint_loc元素的方式为： xpath
+2017-07-05 15:17:54,091 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_usr_error_hint_loc元素的值为:.//*[@id='js-login-form']/div[3]
+2017-07-05 15:17:54,095 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,095 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,095 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_pwd_error_hint_loc
+2017-07-05 15:17:54,096 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_pwd_error_hint_loc元素的方式为： xpath
+2017-07-05 15:17:54,096 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_pwd_error_hint_loc元素的值为:.//*[@id='js-login-form']/div[3]
+2017-07-05 15:17:54,104 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,105 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,105 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_usr_empty_hint_loc
+2017-07-05 15:17:54,105 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_usr_empty_hint_loc元素的方式为： xpath
+2017-07-05 15:17:54,105 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_usr_empty_hint_loc元素的值为:html/body/div[4]/div/table/tbody/tr[2]/td/div
+2017-07-05 15:17:54,115 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,118 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,118 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_pwd_empty_hint_loc
+2017-07-05 15:17:54,118 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_pwd_empty_hint_loc元素的方式为： xpath
+2017-07-05 15:17:54,118 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_pwd_empty_hint_loc元素的值为:html/body/div[4]/div/table/tbody/tr[2]/td/div
+2017-07-05 15:17:54,127 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,128 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,128 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_unbound_user_hint_loc
+2017-07-05 15:17:54,128 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_unbound_user_hint_loc元素的方式为： xpath
+2017-07-05 15:17:54,130 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_unbound_user_hint_loc元素的值为:.//*[@id='js-login-form']/div[3]
+2017-07-05 15:17:54,134 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,135 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,135 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_invalid_usr_hint_loc
+2017-07-05 15:17:54,135 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_invalid_usr_hint_loc元素的方式为： xpath
+2017-07-05 15:17:54,137 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_invalid_usr_hint_loc元素的值为:.//*[@id='js-login-form']/div[3]
+2017-07-05 15:17:54,141 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,141 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,141 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_login_success_hint_loc
+2017-07-05 15:17:54,142 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_login_success_hint_loc元素的方式为： xpath
+2017-07-05 15:17:54,142 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_login_success_hint_loc元素的值为:html/body/div[1]/div/ul/li[2]/a
+2017-07-05 15:17:54,154 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,154 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,155 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_quict_loc
+2017-07-05 15:17:54,155 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_quict_loc元素的方式为： linktext
+2017-07-05 15:17:54,155 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_quict_loc元素的值为:退出
+2017-07-05 15:17:54,165 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,165 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,167 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_custom_menu_loc
+2017-07-05 15:17:54,167 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_custom_menu_loc元素的方式为： linktext
+2017-07-05 15:17:54,167 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_custom_menu_loc元素的值为:自定义菜单
+2017-07-05 15:17:54,171 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,173 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,174 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_feedback_loc
+2017-07-05 15:17:54,174 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_feedback_loc元素的方式为： linktext
+2017-07-05 15:17:54,174 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_feedback_loc元素的值为:关注时回复
+2017-07-05 15:17:54,177 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,180 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,180 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_keyword_loc
+2017-07-05 15:17:54,180 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_keyword_loc元素的方式为： linktext
+2017-07-05 15:17:54,180 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_keyword_loc元素的值为:关键字回复
+2017-07-05 15:17:54,247 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,249 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,252 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_unrecognized_loc
+2017-07-05 15:17:54,253 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_unrecognized_loc元素的方式为： linktext
+2017-07-05 15:17:54,253 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_unrecognized_loc元素的值为:无法识别回复
+2017-07-05 15:17:54,263 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,263 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,263 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_timestamp_loc
+2017-07-05 15:17:54,263 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_timestamp_loc元素的方式为： xpath
+2017-07-05 15:17:54,263 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_timestamp_loc元素的值为:.//*[@id='js-main-page-content']/div[2]/ul/li/time
+2017-07-05 15:17:54,267 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,269 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,269 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_main_page_loc
+2017-07-05 15:17:54,269 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_main_page_loc元素的方式为： xpath
+2017-07-05 15:17:54,269 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_main_page_loc元素的值为:html/body/div[2]/div/div[2]/ol/li
+2017-07-05 15:17:54,273 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,273 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,275 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_service_name_loc
+2017-07-05 15:17:54,275 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_service_name_loc元素的方式为： xpath
+2017-07-05 15:17:54,275 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_service_name_loc元素的值为:.//*[@id='js-main-page-content']/div[1]/div[1]/div/h4
+2017-07-05 15:17:54,279 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,279 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,279 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_service_id_loc
+2017-07-05 15:17:54,280 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_service_id_loc元素的方式为： xpath
+2017-07-05 15:17:54,280 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_service_id_loc元素的值为:.//*[@id='js-main-page-content']/div[1]/div[1]/div/p
+2017-07-05 15:17:54,299 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,299 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,299 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_note_loc
+2017-07-05 15:17:54,299 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_note_loc元素的方式为： xpath
+2017-07-05 15:17:54,301 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_note_loc元素的值为:.//*[@id='js-main-page-content']/div[2]/ul/li/a/span
+2017-07-05 15:17:54,303 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,305 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,305 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_send_all_loc
+2017-07-05 15:17:54,305 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_send_all_loc元素的方式为： xpath
+2017-07-05 15:17:54,305 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_send_all_loc元素的值为:html/body/div[2]/div/div[2]/ol/li[2]
+2017-07-05 15:17:54,325 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,361 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,361 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_custom_menu_manage_loc
+2017-07-05 15:17:54,362 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_custom_menu_manage_loc元素的方式为： xpath
+2017-07-05 15:17:54,362 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_custom_menu_manage_loc元素的值为:.//*[@id='custom-menu-content']/ol/li[1]
+2017-07-05 15:17:54,367 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,368 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,368 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_feedback_manage_loc
+2017-07-05 15:17:54,368 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_feedback_manage_loc元素的方式为： xpath
+2017-07-05 15:17:54,368 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_feedback_manage_loc元素的值为:html/body/div[2]/div/div[2]/ol/li[2]
+2017-07-05 15:17:54,377 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,377 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,378 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_keyword_manage_loc
+2017-07-05 15:17:54,378 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_keyword_manage_loc元素的方式为： xpath
+2017-07-05 15:17:54,378 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_keyword_manage_loc元素的值为:html/body/div[2]/div/div[2]/ol/li[2]
+2017-07-05 15:17:54,395 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,400 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,400 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_unrecognized_manage_loc
+2017-07-05 15:17:54,400 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_unrecognized_manage_loc元素的方式为： xpath
+2017-07-05 15:17:54,401 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_unrecognized_manage_loc元素的值为:html/body/div[2]/div/div[2]/ol/li[2]
+2017-07-05 15:17:54,411 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,411 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,411 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_basic_manage_loc
+2017-07-05 15:17:54,411 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_basic_manage_loc元素的方式为： xpath
+2017-07-05 15:17:54,413 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_basic_manage_loc元素的值为:.//*[@id='side-menu']/li[1]/label
+2017-07-05 15:17:54,420 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,420 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,421 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_source_manage_loc
+2017-07-05 15:17:54,421 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_source_manage_loc元素的方式为： xpath
+2017-07-05 15:17:54,421 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_source_manage_loc元素的值为:.//*[@id='side-menu']/li[1]/ul/li/a
+2017-07-05 15:17:54,440 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,440 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,440 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_source_manage_title_loc
+2017-07-05 15:17:54,441 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_source_manage_title_loc元素的方式为： xpath
+2017-07-05 15:17:54,441 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_source_manage_title_loc元素的值为:html/body/div[2]/div/div[2]/ol/li[2]
+2017-07-05 15:17:54,450 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,450 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,450 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_add_single_page_text_loc
+2017-07-05 15:17:54,450 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_add_single_page_text_loc元素的方式为： xpath
+2017-07-05 15:17:54,451 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_add_single_page_text_loc元素的值为:.//*[@id='media']/div/div[1]/a[1]
+2017-07-05 15:17:54,456 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_element.xml文件读取...
+2017-07-05 15:17:54,457 -main.page_function- [file:page_function.py]-[func:get_page_element][line:80] - INFO: 定位元素中...
+2017-07-05 15:17:54,457 -main.page_function- [file:page_function.py]-[func:get_page_element][line:81] - INFO: 定位元素名称为：mp_add_new_single_page_text_loc
+2017-07-05 15:17:54,457 -main.page_function- [file:page_function.py]-[func:get_page_element][line:83] - INFO: 定位mp_add_new_single_page_text_loc元素的方式为： xpath
+2017-07-05 15:17:54,457 -main.page_function- [file:page_function.py]-[func:get_page_element][line:85] - INFO: 定位mp_add_new_single_page_text_loc元素的值为:html/body/div[2]/div/div[2]/ol/li[3]
+2017-07-05 15:17:59,963 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-05 15:17:59,963 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:39] - INFO: 指定浏览器为chrome
+2017-07-05 15:18:07,309 -main- [file:my_unittest.py]-[func:setUp][line:26] - INFO: 浏览器窗口最大化...
+2017-07-05 15:18:07,311 -main- [file:login_test.py]-[func:test_001_login][line:25] - INFO: 开始执行测试用例：用例编号001：mp登录-用户名、密码为空
+2017-07-05 15:18:07,311 -main- [file:login_test.py]-[func:test_001_login][line:26] - INFO: 开始登录mp...
+2017-07-05 15:18:07,313 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-05 15:18:07,315 -main.page_function- [file:page_function.py]-[func:get_test_data][line:61] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为1
+2017-07-05 15:18:07,315 -main.page_function- [file:page_function.py]-[func:get_test_data][line:62] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:
+2017-07-05 15:18:07,319 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-05 15:18:07,319 -main.page_function- [file:page_function.py]-[func:get_test_data][line:61] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为1
+2017-07-05 15:18:07,319 -main.page_function- [file:page_function.py]-[func:get_test_data][line:62] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:
+2017-07-05 15:18:52,671 -main- [file:loginPage.py]-[func:mp_user_login][line:143] - INFO: 打开浏览器: http://192.168.2.106:8050/WxMgr/webconsole/login.jsp
+2017-07-05 15:19:42,845 -main- [file:my_unittest.py]-[func:user_normal_login][line:69] - ERROR: 登录操作异常！
+2017-07-05 15:19:42,845 -main- [file:my_unittest.py]-[func:user_normal_login][line:70] - ERROR: 系统抛出异常:Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 33.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir1528_19814}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: fc2d5ba8488b6b33a12375ded8dbf1cc
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-05 15:19:53,270 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-05 15:19:53,272 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:39] - INFO: 指定浏览器为chrome
+2017-07-05 15:20:00,555 -main- [file:my_unittest.py]-[func:setUp][line:26] - INFO: 浏览器窗口最大化...
+2017-07-05 15:20:00,555 -main- [file:login_test.py]-[func:test_002_login][line:41] - INFO: 开始执行测试用例：用例编号002：mp登录-用户名正确、密码为空
+2017-07-05 15:20:00,555 -main- [file:login_test.py]-[func:test_002_login][line:42] - INFO: 开始登录mp...
+2017-07-05 15:20:00,559 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-05 15:20:00,559 -main.page_function- [file:page_function.py]-[func:get_test_data][line:61] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为2
+2017-07-05 15:20:00,559 -main.page_function- [file:page_function.py]-[func:get_test_data][line:62] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:test
+2017-07-05 15:20:00,562 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-05 15:20:00,563 -main.page_function- [file:page_function.py]-[func:get_test_data][line:61] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为2
+2017-07-05 15:20:00,563 -main.page_function- [file:page_function.py]-[func:get_test_data][line:62] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:
+2017-07-05 15:20:45,849 -main- [file:loginPage.py]-[func:mp_user_login][line:143] - INFO: 打开浏览器: http://192.168.2.106:8050/WxMgr/webconsole/login.jsp
+2017-07-05 15:21:35,803 -main- [file:my_unittest.py]-[func:user_normal_login][line:69] - ERROR: 登录操作异常！
+2017-07-05 15:21:35,805 -main- [file:my_unittest.py]-[func:user_normal_login][line:70] - ERROR: 系统抛出异常:Message: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='loginName']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32.96 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.0', revision: '0e4837e', time: '2015-07-29 22:56:05'
+System info: host: 'N/A', ip: 'N/A', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir3240_8736}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 9d5ccfab5b29ed685e1e2a46f28f9354
+*** Element info: {Using=xpath, value=.//*[@id='loginName']}
+Screenshot: available via screen
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:206)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:595)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:348)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath (RemoteWebDriver.java:445)
+    at org.openqa.selenium.By$ByXPath.findElement (By.java:358)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement (RemoteWebDriver.java:340)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (None:-2)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (None:-1)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (None:-1)
+    at java.lang.reflect.Method.invoke (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke (EventFiringWebDriver.java:102)
+    at com.sun.proxy.$Proxy1.findElement (None:-1)
+    at org.openqa.selenium.support.events.EventFiringWebDriver.findElement (EventFiringWebDriver.java:185)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:48)
+    at org.openqa.selenium.remote.server.handler.FindElement.call (FindElement.java:1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at org.openqa.selenium.remote.server.DefaultSession$1.run (DefaultSession.java:176)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2017-07-05 15:21:45,533 -main.browser_driver- [file:browser_driver.py]-[func:set_param][line:27] - DEBUG: 配置的主机为：http://192.168.2.110:5555/wd/hub 
+2017-07-05 15:21:45,535 -main.browser_driver- [file:browser_driver.py]-[func:chrome_browser][line:39] - INFO: 指定浏览器为chrome
+2017-07-05 15:21:52,924 -main- [file:my_unittest.py]-[func:setUp][line:26] - INFO: 浏览器窗口最大化...
+2017-07-05 15:21:52,924 -main- [file:login_test.py]-[func:test_003_login][line:57] - INFO: 开始执行测试用例：用例编号003：mp登录-用户名正确、未绑定公众号
+2017-07-05 15:21:52,926 -main- [file:login_test.py]-[func:test_003_login][line:58] - INFO: 开始登录操作...
+2017-07-05 15:21:52,928 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-05 15:21:52,930 -main.page_function- [file:page_function.py]-[func:get_test_data][line:61] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为3
+2017-07-05 15:21:52,930 -main.page_function- [file:page_function.py]-[func:get_test_data][line:62] - INFO: 使用的测试数据属性为:username, 读取到的测试数据值为:0046
+2017-07-05 15:21:52,934 -main.base_function- [file:base_function.py]-[func:read_xml][line:49] - INFO: 打开D:\PycharmProjects\kk_mp\mp\data\Page_data.xml文件读取...
+2017-07-05 15:21:52,934 -main.page_function- [file:page_function.py]-[func:get_test_data][line:61] - INFO: 读取测试数据中... 读取路径为:D:\PycharmProjects\kk_mp\mp\data\Page_data.xml ,用例编号为3
+2017-07-05 15:21:52,934 -main.page_function- [file:page_function.py]-[func:get_test_data][line:62] - INFO: 使用的测试数据属性为:password, 读取到的测试数据值为:1

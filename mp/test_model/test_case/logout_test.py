@@ -26,11 +26,15 @@ class LoginOutTest(MyTest):
         logger.info(u"开始执行测试用例：用例编号007：mp登录-用户名密码正确，且绑定了公众号,然后退出")
         logger.info(u"开始登出操作...")
         self.assertTrue(self.login_out("007"))
+        logger.info(" 正在获得用例期望值...")
         expected_value = get_expected_value("007")
-        self.assertEqual(LoginPage(self.driver).get_login_button().text, expected_value)
-        logger.info(u"测试判断:%s 是否等于:%s" %(LoginPage(self.driver).get_login_button().text, expected_value))
+
+        logger.info("正在获得截图标题...")
         title = get_image_title(007)
+        logger.info("生成截图中...")
         insert_img(self.driver,title)
+        logger.info(u"测试判断:%s 是否等于:%s" %(LoginPage(self.driver).get_login_button().text, expected_value))
+        self.assertEqual(LoginPage(self.driver).get_login_button().text, expected_value)
 
 if __name__ =="__main__":
 
