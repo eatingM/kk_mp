@@ -8,7 +8,7 @@
 	<!--用例编号002：mp登录-用户名、密码为空-->
 	<test_case 	number = "002" title = "用例编号002：mp登录-用户名正确，密码为空.jpg" 	username = "test"	password=""	 value="登陆密码不能为空"/>
 	<!--用例编号003：mp登录-用户名正确、未绑定公众号-->
-	<test_case 	number = "003" title = "用例编号003：mp登录-用户名正确、未绑定公众号.jpg" 	username = "0046"	password="1"	 value="此运营人员没有关联公众号，请关联后操作"/>
+	<test_case 	number = "003" title = "用例编号003：mp登录-用户名正确、未绑定公众号.jpg" 	username = "test1"	password="1"	 value="此运营人员没有关联公众号，请关联后操作"/>
 	
 	<!--用例编号004：mp登录-用户名正确、未绑定公众号-->
 	<test_case 	number = "004" title = "用例编号004：mp登录-此运营人员不存在.jpg" 	username = "abcdefg"	password="1"	 value="此运营人员不存在"/>
@@ -26,10 +26,10 @@
 	<test_case 	number = "008" title = "用例编号008：mp首页检查-用户名密码正确，且绑定了公众号，登录后检查首页位置.jpg" 	username = "0099"	password="1"	 value="首页"/>
 	
 	<!--用例编号009：mp首页检查-用例编号009：mp首页检查-用户名密码正确，且绑定了公众号，登录后检查公众号名称-->
-	<test_case 	number = "009" title = "用例编号009：mp首页检查-用户名密码正确，且绑定了公众号，登录后检查公众号名称.jpg" 	username = "0099"	password="1"	 value="公众号1"/>
+	<test_case 	number = "009" title = "用例编号009：mp首页检查-用户名密码正确，且绑定了公众号，登录后检查公众号名称.jpg" 	username = "0099"	password="1"	 value="新mp"/>
 	
 	<!--用例编号010：mp首页检查-用例编号010：mp首页检查-用户名密码正确，且绑定了公众号，登录后检查公众号id-->
-	<test_case 	number = "010" title = "用例编号010：mp首页检查-用户名密码正确，且绑定了公众号，登录后检查公众号id.jpg" 	username = "0099"	password="1"	 value="公众号ID：24"/>
+	<test_case 	number = "010" title = "用例编号010：mp首页检查-用户名密码正确，且绑定了公众号，登录后检查公众号id.jpg" 	username = "0099"	password="1"	 value="公众号ID：1"/>
 	
 	<!--用例编号011：mp首页检查-用例编号011：mp首页检查-用户名密码正确，且绑定了公众号，登录后检查公众号公告内容-->
 	<test_case 	number = "011" title = "用例编号011：mp首页检查-用户名密码正确，且绑定了公众号，登录后检查公众号公告内容.jpg" 	username = "0099"	password="1"	 value="蓝凌软件群发功能全新上线"/>
@@ -53,8 +53,10 @@
 	<test_case 	number = "017" title = "用例编号017：mp登录后，进入素材管理界面.jpg"  value="素材管理"/>
 	
 	<!--用例编号018：mp首页按钮跳转-用例编号018：mp登录后，进入素材管理界面,进入新增单图文界面"-->
-	<test_case 	number = "017" title = "用例编号018：mp登录后，进入素材管理界面,进入新增单图文界面.jpg"  value="新增图文素材"/>
+	<test_case 	number = "018" title = "用例编号018：mp登录后，进入素材管理界面,进入新增单图文界面.jpg"  value="新增图文素材"/>
 	
+	<!--用例编号019：mp首页按钮跳转-用例编号019：mp登录后，进入素材管理界面,进入新增多图文界面"-->
+	<test_case 	number = "019" title = "用例编号019：mp登录后，进入素材管理界面,进入新增多图文界面.jpg"  value="新增图文素材"/>
 	
 	
 	</loginPage>

@@ -32,8 +32,16 @@ class MenulistPage(Page):
 
     def click_mp_source_manage_btn(self):
 
-        MenulistPage(self.driver).click_mp_basic_manage_btn()
-        self.get_mp_source_manage_btn().click()
+        flag = True
+        try:
+            MenulistPage(self.driver).click_mp_basic_manage_btn()
+            self.get_mp_source_manage_btn().click()
+            return flag
+        except Exception as e:
+            logger.error("点击素材管理按钮发生异常！")
+            logger.error(str(e))
+            flag = False
+            return flag
 
 
 

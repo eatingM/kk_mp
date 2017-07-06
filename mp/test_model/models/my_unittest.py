@@ -20,7 +20,6 @@ class MyTest(unittest.TestCase):
 
         (self.driver, flag) = chrome_browser()
         self.assertTrue(flag)
-        self.assertTrue(flag)
         self.driver.implicitly_wait(10)
         self.driver.maximize_window()
         logger.info("浏览器窗口最大化...")

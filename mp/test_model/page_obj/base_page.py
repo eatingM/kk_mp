@@ -7,7 +7,7 @@ from mp.test_model.models.my_logger import *
 
 
 class Page(object):
-    mp_url = "http://192.168.2.106:8050/WxMgr/webconsole"
+    mp_url = "http://192.168.2.43:8050/WxMgr/webconsole"
 
     logger = logging.getLogger("main.base_page")
 

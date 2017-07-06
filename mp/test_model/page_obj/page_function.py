@@ -55,12 +55,16 @@ def get_test_data(xml_path, test_number, test_attribute):
     :return:
     """
 
-    root = read_xml(xml_path)
-    test_cases = root.getElementsByTagName("test_case")
-    test_number = get_test_number(test_number)
-    logger.info(u"读取测试数据中... 读取路径为:%s ,用例编号为%s"% (xml_list[0], test_number))
-    logger.info(u"使用的测试数据属性为:%s, 读取到的测试数据值为:%s" % (test_attribute, test_cases[test_number-1].getAttribute(test_attribute)))
-    return test_cases[test_number-1].getAttribute(test_attribute)
+    try:
+        root = read_xml(xml_path)
+        test_cases = root.getElementsByTagName("test_case")
+        test_number = get_test_number(test_number)
+        logger.info(u"读取测试数据中... 读取路径为:%s ,用例编号为%s"% (xml_list[0], test_number))
+        logger.info(u"使用的测试数据属性为:%s, 读取到的测试数据值为:%s" % (test_attribute, test_cases[test_number-1].getAttribute(test_attribute)))
+        return test_cases[test_number-1].getAttribute(test_attribute)
+    except Exception as e:
+        logger.error("获取测试编号为 %s 的属性为 %s 测试数据失败！" % (test_number, test_attribute ))
+        logger.error("系统抛出异常：%s" % str(e))
 
 
 def get_page_element(xml_path, element_name):
@@ -76,14 +80,18 @@ def get_page_element(xml_path, element_name):
     root = read_xml(xml_path)
     list =[]
 
-    element = root.getElementsByTagName(element_name)[0]
-    logger.info(u"定位元素中...")
-    logger.info(u"定位元素名称为：%s" % element_name)
-    list.append(element.getAttribute("loc_by"))
-    logger.info(u"定位%s元素的方式为： %s" % (element_name,element.getAttribute("loc_by")))
-    list.append(element.getAttribute("loc"))
-    logger.info(u"定位%s元素的值为:%s" % (element_name,element.getAttribute("loc")))
-    return list
+    try:
+        element = root.getElementsByTagName(element_name)[0]
+        logger.info(u"定位元素中...")
+        logger.info(u"定位元素名称为：%s" % element_name)
+        list.append(element.getAttribute("loc_by"))
+        logger.info(u"定位%s元素的方式为： %s" % (element_name,element.getAttribute("loc_by")))
+        list.append(element.getAttribute("loc"))
+        logger.info(u"定位%s元素的值为:%s" % (element_name,element.getAttribute("loc")))
+        return list
+    except Exception as e:
+        logger.error("元素 %s 定位失败" % element_name)
+        logger.error("系统抛出异常：%s" % str(e))
 
 
 def get_login_username(case_number):
