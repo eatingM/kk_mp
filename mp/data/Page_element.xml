@@ -124,6 +124,15 @@
 	<mp_single_shown_title_loc loc_by = "xpath" loc=".//*[@id='js-twEditor']/div/div[1]/div/div[1]/dl/dd[1]"/>
 	
 	
+	<!--mp右侧管理菜单:基础管理-素材管理-单图文编辑界面中的图片输入栏-->
+	<mp_single_image_loc loc_by = "id" loc="js-img-upload"/>
+	
+	<!--mp右侧管理菜单:基础管理-素材管理-单图文编辑界面中的左边显示的图片-->
+	<mp_single_shown_image_loc loc_by = "xpath" loc=".//*[@id='js-twEditor']/div/div[1]/div/div[1]/dl/dt/img"/>
+	
+	
+	
+	
 	
 	
 </mp>

@@ -29,8 +29,18 @@ class SourceManagePage(Page):
     mp_video_add_btn_loc = get_page_element(xml_list[1], "mp_video_add_btn_loc")
     mp_single_title_loc = get_page_element(xml_list[1], "mp_single_title_loc")
     mp_single_shown_title_loc = get_page_element(xml_list[1], "mp_single_shown_title_loc")
+    mp_single_image_loc = get_page_element(xml_list[1], "mp_single_image_loc")
+    mp_single_shown_image_loc = get_page_element(xml_list[1], "mp_single_shown_image_loc")
 
     # Action
+
+    def get_mp_single_shown_image_src(self):
+
+        return self.find_element(self.mp_single_shown_image_loc).get_attribute("src")
+
+    def get_mp_single_image_input(self):
+
+        return self.find_element(self.mp_single_image_loc)
 
     def get_mp_single_shown_title_text(self):
 
@@ -39,7 +49,6 @@ class SourceManagePage(Page):
     def get_mp_single_title_input(self):
 
         return self.find_element(self.mp_single_title_loc)
-
 
     def get_mp_video_add_btn(self):
 
@@ -187,6 +196,24 @@ class SourceManagePage(Page):
         try:
             input_value = get_input_value(casenumber)
             self.get_mp_single_title_input().send_keys(input_value)
+            return flag
+        except Exception as e:
+            logger.error("向单图文标题栏输入操作异常！")
+            logger.error("系统抛出异常！%s" % str(e))
+            flag = False
+            return flag
+
+    def get_single_page_text_image_input(self, casenumber):
+        """
+        预置条件：已经到了单图文的编辑界面
+        进行单图文的标题输入
+        作为测试用例执行的关键步骤
+        :return:
+        """
+        flag = True
+        try:
+            input_value = get_input_value(casenumber)
+            self.get_mp_single_image_input().send_keys(input_value)
             return flag
         except Exception as e:
             logger.error("向单图文标题栏输入操作异常！")

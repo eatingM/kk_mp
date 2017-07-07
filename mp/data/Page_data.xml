@@ -129,6 +129,22 @@
 	<!--用例编号041：mp首页按钮跳转-用例编号041：mp登录后，进入素材管理的图文界面，进行单图文添加(更新标题内容)"-->
 	<test_case41 title = "用例编号041：mp登录后，进入素材管理的图文界面，进行单图文添加(更新标题内容).jpg"  input="abcd" value="abcabcd"/>
 	
+	
+	<!--用例编号042：mp首页按钮跳转-用例编号042：mp登录后，进入素材管理的图文界面，添加单图文的图片(png)"-->
+	<test_case42 title = "用例编号042：mp登录后，进入素材管理的图文界面，添加单图文的图片(png).jpg"  input="D:\\PycharmProjects\\kk_mp\\mp\\data\\kk_image.png" value="assets/images/fmdtp.jpg"/>
+	
+	<!--用例编号043：mp首页按钮跳转-用例编号043：mp登录后，进入素材管理的图文界面，添加单图文的图片(jpeg)"-->
+	<test_case43 title = "用例编号043：mp登录后，进入素材管理的图文界面，添加单图文的图片(jpeg).jpg"  input="D:\\PycharmProjects\\kk_mp\\mp\\data\\case43.jpeg" value="assets/images/fmdtp.jpg"/>
+	
+	<!--用例编号044：mp首页按钮跳转-用例编号044：mp登录后，进入素材管理的图文界面，添加单图文的图片(gif)"-->
+	<test_case44 title = "用例编号044：mp登录后，进入素材管理的图文界面，添加单图文的图片(gif).jpg"  input="D:\\PycharmProjects\\kk_mp\\mp\\data\\case44.gif" value="assets/images/fmdtp.jpg"/>
+	
+	<!--用例编号045：mp首页按钮跳转-用例编号045：mp登录后，进入素材管理的图文界面，添加单图文的图片(jpg)"-->
+	<test_case45 title = "用例编号045：mp登录后，进入素材管理的图文界面，添加单图文的图片(jpg).jpg"  input="D:\\PycharmProjects\\kk_mp\\mp\\data\\case45.jpg" value="assets/images/fmdtp.jpg"/>
+	
+	<!--用例编号046：mp首页按钮跳转-用例编号046：mp登录后，进入素材管理的图文界面，添加单图文的图片(log)"-->
+	<test_case46 title = "用例编号046：mp登录后，进入素材管理的图文界面，添加单图文的图片(log).jpg"  input="D:\\PycharmProjects\\kk_mp\\mp\\data\\case46.log" value="assets/images/fmdtp.jpg"/>
+	
 	</loginPage>
 	
 	
