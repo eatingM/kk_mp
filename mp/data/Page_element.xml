@@ -98,4 +98,32 @@
 	<!--mp右侧管理菜单:基础管理-新增图文素材标题界面-->
 	<mp_add_new_single_page_text_loc loc_by = "xpath" loc="html/body/div[2]/div/div[2]/ol/li[3]"/>
 	
+	<!--mp右侧管理菜单:基础管理-素材管理-图片按钮-->
+	<mp_image_manage_loc loc_by = "xpath" loc=".//*[@id='js-main-page-content']/ul/li[2]/a"/>
+	
+	<!--mp右侧管理菜单:基础管理-素材管理-语音按钮-->
+	<mp_audio_manage_loc loc_by = "xpath" loc=".//*[@id='js-main-page-content']/ul/li[3]/a"/>
+	
+	<!--mp右侧管理菜单:基础管理-素材管理-视频按钮-->
+	<mp_video_manage_loc loc_by = "xpath" loc=".//*[@id='js-main-page-content']/ul/li[4]/a"/>
+	
+	<!--mp右侧管理菜单:基础管理-素材管理-图片尺寸提示文字-->
+	<mp_image_size_note_loc loc_by = "xpath" loc=".//*[@id='photo']/div/form/span"/>
+	
+	<!--mp右侧管理菜单:基础管理-素材管理-添加语音按钮-->
+	<mp_audio_add_btn_loc loc_by = "xpath" loc=".//*[@id='voice']/div/div[1]/label"/>
+	
+	<!--mp右侧管理菜单:基础管理-素材管理-添加视频按钮-->
+	<mp_video_add_btn_loc loc_by = "xpath" loc=".//*[@id='video']/div/div[1]/label"/>
+	
+	
+	<!--mp右侧管理菜单:基础管理-素材管理-单图文编辑界面中的标题输入栏-->
+	<mp_single_title_loc loc_by = "xpath" loc=".//*[@id='js-edit-title']"/>
+	
+	<!--mp右侧管理菜单:基础管理-素材管理-单图文编辑界面左边显示的标题-->
+	<mp_single_shown_title_loc loc_by = "xpath" loc=".//*[@id='js-twEditor']/div/div[1]/div/div[1]/dl/dd[1]"/>
+	
+	
+	
+	
 </mp>

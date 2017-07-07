@@ -47,7 +47,7 @@ class SourceManageTest(MyTest):
 
     def test_019_add_single_page_text(self):
         """用例编号019：mp登录后，进入素材管理界面,进入新增多图文界面"""
-        logger.info("开始执行测试用例：用例编号018：mp登录后，进入素材管理界面,进入新增单图文界面")
+        logger.info("开始执行测试用例：用例编号020：mp登录后，进入素材管理界面,进入新增多图文界面")
         logger.info("开始登录操作...")
         self.assertTrue(self.user_login_success())
         logger.info(" 正在获得用例期望值...")
@@ -60,6 +60,50 @@ class SourceManageTest(MyTest):
         logger.info("测试判断:%s 是否等于:%s" % (SourceManagePage(self.driver).get_add_new_single_page_text(), expected_value))
         self.assertEqual(SourceManagePage(self.driver).get_add_new_single_page_text(), expected_value)
 
+    def test_020_turn_to_image_manage_page(self):
+        """用例编号020：mp登录后，进入素材管理界面,进入新增图片管理界面"""
+        logger.info("开始执行测试用例：用例编号020：mp登录后，进入素材管理界面,进入图片管理界面")
+        logger.info("开始登录操作...")
+        self.assertTrue(self.user_login_success())
+        logger.info(" 正在获得用例期望值...")
+        expected_value = get_expected_value("020")
+        self.assertTrue(SourceManagePage(self.driver).get_image_manage_page())
+        logger.info("正在获得截图标题...")
+        title = get_image_title("020")
+        logger.info("生成截图中...")
+        insert_img(self.driver, title)
+        logger.info("测试判断:%s 是否等于:%s" % (SourceManagePage(self.driver).get_mp_image_size_note_text(), expected_value))
+        self.assertEqual(SourceManagePage(self.driver).get_mp_image_size_note_text(), expected_value)
+
+    def test_021_turn_to_audio_manage_page(self):
+        """用例编号021：mp登录后，进入素材管理界面,进入添加语音管理界面"""
+        logger.info("开始执行测试用例：用例编号021：mp登录后，进入素材管理界面,进入图片管理界面")
+        logger.info("开始登录操作...")
+        self.assertTrue(self.user_login_success())
+        logger.info(" 正在获得用例期望值...")
+        expected_value = get_expected_value("021")
+        self.assertTrue(SourceManagePage(self.driver).get_audio_manage_page())
+        logger.info("正在获得截图标题...")
+        title = get_image_title("021")
+        logger.info("生成截图中...")
+        insert_img(self.driver, title)
+        logger.info("测试判断:%s 是否等于:%s" % (SourceManagePage(self.driver).get_mp_audio_add_btn_text(), expected_value))
+        self.assertEqual(SourceManagePage(self.driver).get_mp_audio_add_btn_text(), expected_value)
+
+    def test_022_turn_to_video_manage_page(self):
+        """用例编号022：mp登录后，进入素材管理界面,进入添加视频管理界面"""
+        logger.info("开始执行测试用例：用例编号020：mp登录后，进入素材管理界面,进入语音管理界面")
+        logger.info("开始登录操作...")
+        self.assertTrue(self.user_login_success())
+        logger.info(" 正在获得用例期望值...")
+        expected_value = get_expected_value("022")
+        self.assertTrue(SourceManagePage(self.driver).get_video_manage_page())
+        logger.info("正在获得截图标题...")
+        title = get_image_title("022")
+        logger.info("生成截图中...")
+        insert_img(self.driver, title)
+        logger.info("测试判断:%s 是否等于:%s" % (SourceManagePage(self.driver).get_mp_video_add_btn_text(), expected_value))
+        self.assertEqual(SourceManagePage(self.driver).get_mp_video_add_btn_text(), expected_value)
 
 '''
 @author Mavis

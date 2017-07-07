@@ -60,11 +60,13 @@ def get_test_data(xml_path, test_number, test_attribute):
         test_number = get_test_number(test_number)
         new_tagname = "test_case" + str(test_number)
         test_case = root.getElementsByTagName(new_tagname)
+        """
         logger.info("标签的名称为： %s" % new_tagname)
         logger.info("标签的名称属性为: %s" % type(new_tagname))
         logger.info("返回的测试用例为！！！！！！！！！！！！！！！" % test_case)
-        logger.info(u"读取测试数据中... 读取路径为:%s ,用例编号为%s"% (xml_list[0], test_number))
-        logger.info(u"使用的测试数据属性为:%s, 读取到的测试数据值为:%s" % (test_attribute, test_case[0].getAttribute(test_attribute)))
+        """
+        logger.info("读取测试数据中... 读取路径为:%s ,用例编号为%s"% (xml_list[0], test_number))
+        logger.info("使用的测试数据属性为:%s, 读取到的测试数据值为:%s" % (test_attribute, test_case[0].getAttribute(test_attribute)))
         return test_case[0].getAttribute(test_attribute)
     except Exception as e:
         logger.error("获取测试编号为 %s 的属性为 %s 测试数据失败！" % (test_number, test_attribute ))
@@ -128,8 +130,19 @@ def get_expected_value(case_number):
     """
 
     expected_value = get_test_data(xml_list[0], case_number, "value")
-    logger.info(u"读取测试数据中... 读取路径为:%s ,用例编号为%s,读取到的测试期望值为:%s" % (xml_list[0], case_number, expected_value ))
+    logger.info("读取测试数据中... 读取路径为:%s ,用例编号为%s,读取到的测试期望值为:%s" % (xml_list[0], case_number, expected_value ))
     return expected_value
+
+
+def get_input_value(case_number):
+    """
+
+    :param case_number:
+    :return:
+    """
+    input_value = get_test_data(xml_list[0], case_number, "input")
+    logger.info("读取测试数据中... 读取路径为:%s ,用例编号为%s,读取到的测试期望值为:%s" % (xml_list[0], case_number, input_value ))
+    return input_value
 
 
 def get_image_title(case_number):
