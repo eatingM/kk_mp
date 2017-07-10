@@ -20,17 +20,6 @@ class LoginPage(Page):
     """
     logger = logging.getLogger("main.loginpage")
 
-    mp_login_usr_loc = get_page_element(xml_list[1], "mp_login_usr_loc")
-    mp_login_usr_paw_loc = get_page_element(xml_list[1], "mp_login_usr_paw_loc")
-    mp_login_btn_loc = get_page_element(xml_list[1], "mp_login_btn_loc")
-    mp_usr_error_hint_loc = get_page_element(xml_list[1], "mp_usr_error_hint_loc")
-    mp_pwd_error_hint_loc = get_page_element(xml_list[1], "mp_pwd_error_hint_loc")
-    mp_usr_empty_hint_loc = get_page_element(xml_list[1], "mp_usr_empty_hint_loc")
-    mp_pwd_empty_hint_loc = get_page_element(xml_list[1], "mp_pwd_empty_hint_loc")
-    mp_unbound_user_hint_loc = get_page_element(xml_list[1], "mp_unbound_user_hint_loc")
-    mp_invalid_usr_hint_loc = get_page_element(xml_list[1], "mp_invalid_usr_hint_loc")
-    mp_login_success_hint_loc = get_page_element(xml_list[1], "mp_login_success_hint_loc")
-
 
     # Action
 
@@ -42,7 +31,7 @@ class LoginPage(Page):
         """
         # input login_name
 
-        login_input = self.find_element(self.mp_login_usr_loc)
+        login_input = self.find_element(self.get_element_loc("mp_login_usr_loc"))
         logger.info(u"向登录的用户名输入框输入：%s" % username)
         login_input.send_keys(username)
 
@@ -53,7 +42,7 @@ class LoginPage(Page):
         :return:
         """
         # input password
-        self.find_element(self.mp_login_usr_paw_loc).send_keys(password)
+        self.find_element(self.get_element_loc("mp_login_usr_paw_loc")).send_keys(password)
         logger.info(u"向登录的密码输入框输入 %s" % password)
 
     def click_login_button(self):
@@ -61,16 +50,14 @@ class LoginPage(Page):
         点击登录界面的登录按钮
         :return:
         """
-
-        self.find_element(self.mp_login_btn_loc).click()
+        self.find_element(self.get_element_loc("mp_login_btn_loc")).click()
 
     def get_login_button(self):
         """
         返回用户登录按钮元素
         :return:
         """
-
-        result = self.find_element(self.mp_login_btn_loc)
+        result = self.find_element(self.get_element_loc("mp_login_btn_loc"))
         return result
 
     def get_usr_error_hint(self):
@@ -78,8 +65,7 @@ class LoginPage(Page):
         返回用户名错误提示内容
         :return:
         """
-
-        result = self.find_element(self.mp_usr_error_hint_loc).text
+        result = self.find_element(self.get_element_loc("mp_usr_error_hint_loc")).text
         return result
 
     def get_pwd_error_hint(self):
@@ -87,8 +73,7 @@ class LoginPage(Page):
         返回登录密码错误提示内容
         :return:
         """
-
-        return self.find_element(self.mp_pwd_error_hint_loc).text
+        return self.find_element(self.get_element_loc("mp_pwd_error_hint_loc")).text
 
     def get_usr_empty_hint(self):
         """
@@ -96,35 +81,35 @@ class LoginPage(Page):
         :return:
         """
 
-        return self.find_element(self.mp_usr_empty_hint_loc).text
+        return self.find_element(self.get_element_loc("mp_usr_empty_hint_loc")).text
 
     def get_pwd_empty_hint(self):
         """
         返回登录密码为空的提示内容
         :return:
         """
-        return self.find_element(self.mp_pwd_empty_hint_loc).text
+        return self.find_element(self.get_element_loc("mp_pwd_empty_hint_loc")).text
 
     def get_unbound_user_hint(self):
         """
         返回用户未绑定公众号的提示内容
         :return:
         """
-        return self.find_element(self.mp_unbound_user_hint_loc).text
+        return self.find_element(self.get_element_loc("mp_unbound_user_hint_loc")).text
 
     def get_invalid_usr_hint(self):
         """
         返回当前用户无效的提示内容
         :return:
         """
-        return self.find_element(self.mp_invalid_usr_hint_loc).text
+        return self.find_element(self.get_element_loc("mp_invalid_usr_hint_loc")).text
 
     def get_login_success_hint(self):
         """
         返回登录成功的提示内容
         :return:
         """
-        return self.find_element(self.mp_login_success_hint_loc).text
+        return self.find_element(self.get_element_loc("mp_login_success_hint_loc")).text
 
     def mp_user_login(self, username, password):
         """

@@ -10,9 +10,6 @@ class CustomMenu(Page):
     自定义菜单界面
 
     """
-    # Element loc
-
-    mp_custom_menu_manage_loc = get_page_element(xml_list[1], "mp_custom_menu_manage_loc")
 
     # Action
 
@@ -21,7 +18,7 @@ class CustomMenu(Page):
         返回自定义菜单按钮的文字内容
         :return:
         """
-        return self.find_element(self.mp_custom_menu_manage_loc).text
+        return self.find_element(self.get_element_loc("mp_custom_menu_manage_loc")).text
 
 '''
 @author Mavis

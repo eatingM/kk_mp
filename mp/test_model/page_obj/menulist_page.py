@@ -12,15 +12,11 @@ class MenulistPage(Page):
     """
     logger = logging.getLogger("main.menulist_page")
 
-    # Element loc
-    mp_basic_manage_loc = get_page_element(xml_list[1], "mp_basic_manage_loc")
-    mp_source_manage_loc = get_page_element(xml_list[1], "mp_source_manage_loc")
-
     # Action
 
     def get_mp_basic_manage_btn(self):
 
-        return self.find_element(self.mp_basic_manage_loc)
+        return self.find_element(self.get_element_loc("mp_basic_manage_loc"))
 
     def click_mp_basic_manage_btn(self):
 
@@ -28,7 +24,7 @@ class MenulistPage(Page):
 
     def get_mp_source_manage_btn(self):
 
-        return self.find_element(self.mp_source_manage_loc)
+        return self.find_element(self.get_element_loc("mp_source_manage_loc"))
 
     def click_mp_source_manage_btn(self):
 

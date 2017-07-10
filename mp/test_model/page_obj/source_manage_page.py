@@ -15,32 +15,12 @@ class SourceManagePage(Page):
     """
     logger = logging.getLogger("main.SourceManagePage")
 
-    # Element loc
-
-    mp_source_manage_title_loc = get_page_element(xml_list[1], "mp_source_manage_title_loc")
-    mp_add_single_page_text_loc = get_page_element(xml_list[1], "mp_add_single_page_text_loc")
-    mp_add_new_single_page_text_loc = get_page_element(xml_list[1], "mp_add_new_single_page_text_loc")
-    mp_add_multi_page_text_loc = get_page_element(xml_list[1], "mp_add_multi_page_text_loc")
-    mp_image_manage_loc = get_page_element(xml_list[1], "mp_image_manage_loc")
-    mp_image_size_note_loc = get_page_element(xml_list[1], "mp_image_size_note_loc")
-    mp_audio_manage_loc = get_page_element(xml_list[1], "mp_audio_manage_loc")
-    mp_audio_add_btn_loc = get_page_element(xml_list[1], "mp_audio_add_btn_loc")
-    mp_video_manage_loc = get_page_element(xml_list[1], "mp_video_manage_loc")
-    mp_video_add_btn_loc = get_page_element(xml_list[1], "mp_video_add_btn_loc")
-    mp_single_title_loc = get_page_element(xml_list[1], "mp_single_title_loc")
-    mp_single_shown_title_loc = get_page_element(xml_list[1], "mp_single_shown_title_loc")
-    mp_single_image_loc = get_page_element(xml_list[1], "mp_single_image_loc")
-    mp_single_shown_image_loc = get_page_element(xml_list[1], "mp_single_shown_image_loc")
-    mp_single_image_error_loc = get_page_element(xml_list[1], "mp_single_image_error_loc")
-    mp_single_image_size_error_loc = get_page_element(xml_list[1], "mp_single_image_size_error_loc")
-    mp_single_summary_loc = get_page_element(xml_list[1], "mp_single_summary_loc")
-
-
     # Action
 
-    def get_element_loc(self, loc_name):
+    """
+    获得元素的方法
 
-        return get_page_element(xml_list[1], loc_name)
+    """
 
     def get_single_shown_summary_text(self):
 
@@ -48,35 +28,35 @@ class SourceManagePage(Page):
 
     def get_mp_single_summary_input(self):
 
-        return self.find_element(self.mp_single_summary_loc)
+        return self.find_element(self.get_element_loc("mp_single_summary_loc"))
 
     def get_mp_single_image_size_error_hint(self):
 
-        return self.find_element(self.mp_single_image_size_error_loc).text
+        return self.find_element(self.get_element_loc("mp_single_image_size_error_loc")).text
 
     def get_mp_single_image_error_hint(self):
 
-        return self.find_element(self.mp_single_image_error_loc).text
+        return self.find_element(self.get_element_loc("mp_single_image_error_loc")).text
 
     def get_mp_single_shown_image_src(self):
 
-        return self.find_element(self.mp_single_shown_image_loc).get_attribute("src")
+        return self.find_element(self.get_element_loc("mp_single_shown_image_loc")).get_attribute("src")
 
     def get_mp_single_image_input(self):
 
-        return self.find_element(self.mp_single_image_loc)
+        return self.find_element(self.get_element_loc("mp_single_image_loc"))
 
     def get_mp_single_shown_title_text(self):
 
-        return self.find_element(self.mp_single_shown_title_loc).text
+        return self.find_element(self.get_element_loc("mp_single_shown_title_loc")).text
 
     def get_mp_single_title_input(self):
 
-        return self.find_element(self.mp_single_title_loc)
+        return self.find_element(self.get_element_loc( "mp_single_title_loc"))
 
     def get_mp_video_add_btn(self):
 
-        return self.find_element(self.mp_video_add_btn_loc)
+        return self.find_element(self.get_element_loc("mp_video_add_btn_loc"))
 
     def get_mp_video_add_btn_text(self):
 
@@ -84,11 +64,11 @@ class SourceManagePage(Page):
 
     def get_mp_video_manage_btn(self):
 
-        return self.find_element(self.mp_video_manage_loc)
+        return self.find_element(self.get_element_loc("mp_video_manage_loc"))
 
     def get_mp_audio_add_btn(self):
 
-        return self.find_element(self.mp_audio_add_btn_loc)
+        return self.find_element(self.get_element_loc("mp_audio_add_btn_loc"))
 
     def get_mp_audio_add_btn_text(self):
 
@@ -96,31 +76,31 @@ class SourceManagePage(Page):
 
     def get_mp_audio_manage_btn(self):
 
-        return self.find_element(self.mp_audio_manage_loc)
+        return self.find_element(self.get_element_loc("mp_audio_manage_loc"))
 
     def get_mp_image_size_note_text(self):
 
-        return self.find_element(self.mp_image_size_note_loc).text
+        return self.find_element(self.get_element_loc("mp_image_size_note_loc")).text
 
     def get_mp_image_manage_btn(self):
 
-        return self.find_element(self.mp_image_manage_loc)
+        return self.find_element(self.get_element_loc("mp_image_manage_loc"))
 
     def get_mp_source_manage_title(self):
 
-        return self.find_element(self.mp_source_manage_title_loc).text
+        return self.find_element(self.get_element_loc("mp_source_manage_title_loc")).text
 
     def get_add_new_single_page_text(self):
 
-        return self.find_element(self.mp_add_new_single_page_text_loc).text
+        return self.find_element(self.get_element_loc("mp_add_new_single_page_text_loc")).text
 
     def get_mp_add_single_page_text_btn(self):
 
-        return self.find_element(self.mp_add_single_page_text_loc)
+        return self.find_element(self.get_element_loc("mp_add_single_page_text_loc"))
 
     def get_mp_add_multi_page_text_btn(self):
 
-        return self.find_element(self.mp_add_multi_page_text_loc)
+        return self.find_element(self.get_element_loc("mp_add_multi_page_text_loc"))
 
     def get_new_single_page_text_page(self):
         """

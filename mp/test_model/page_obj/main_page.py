@@ -15,81 +15,77 @@ class MainPage(Page):
     """
     mp 主界面
     """
-    # Element loc
-
-    try:
-        mp_quict_loc = get_page_element(xml_list[1], "mp_quict_loc")
-        mp_custom_menu_loc = get_page_element(xml_list[1], "mp_custom_menu_loc")
-        mp_feedback_loc = get_page_element(xml_list[1], "mp_feedback_loc")
-        mp_keyword_loc = get_page_element(xml_list[1], "mp_keyword_loc")
-        mp_unrecognized_loc = get_page_element(xml_list[1], "mp_unrecognized_loc")
-        mp_timestamp_loc = get_page_element(xml_list[1], "mp_timestamp_loc")
-        mp_main_page_loc = get_page_element(xml_list[1], "mp_main_page_loc")
-        mp_service_name_loc = get_page_element(xml_list[1], "mp_service_name_loc")
-        mp_service_id_loc = get_page_element(xml_list[1], "mp_service_id_loc")
-        mp_note_loc = get_page_element(xml_list[1], "mp_note_loc")
-        mp_send_all_loc = get_page_element(xml_list[1], "mp_send_all_loc")
-    except Exception as e:
-            logger.error(u"系统抛出异常:%s" % str(e))
 
     # Action
 
     def get_mp_send_all_text(self):
-        return self.find_element(self.mp_send_all_loc).text
+
+        return self.find_element(self.get_element_loc("mp_send_all_loc")).text
 
     def get_mp_note_text(self):
-        return self.find_element(self.mp_note_loc).text
+
+        return self.find_element(self.get_element_loc("mp_note_loc")).text
 
     def get_mp_service_id_text(self):
-        return self.find_element(self.mp_service_id_loc).text
+
+        return self.find_element(self.get_element_loc("mp_service_id_loc")).text
 
     def get_mp_service_name_text(self):
-        return self.find_element(self.mp_service_name_loc).text
+
+        return self.find_element(self.get_element_loc("mp_service_name_loc")).text
 
     def get_mp_main_page_loc_text(self):
-        return self.find_element(self.mp_main_page_loc).text
+
+        return self.find_element(self.get_element_loc("mp_main_page_loc")).text
 
     def get_mp_timestamp(self, LoginPage, username, password):
+
         LoginPage.mp_user_login(username, password)
-        return self.find_element(self.mp_timestamp_loc).text
+
+        return self.find_element(self.get_element_loc("mp_timestamp_loc")).text
 
     def get_mp_unrecognized_btn(self):
-        return self.find_element(self.mp_unrecognized_loc)
+
+        return self.find_element(self.get_element_loc("mp_unrecognized_loc"))
 
     def turn_to_unrecognized_feedback(self, LoginPage, username, password):
         LoginPage.mp_user_login(username, password)
         self.get_mp_unrecognized_btn().click()
 
     def get_mp_keyword_feedback_btn(self):
-        return self.find_element(self.mp_keyword_loc)
+
+        return self.find_element(self.get_element_loc("mp_keyword_loc"))
+
+    def get_mp_feedback_btn(self):
+
+        return self.find_element(self.get_element_loc("mp_feedback_loc"))
 
     def turn_to_keyword_feedback(self, LoginPage, username, password):
         LoginPage.mp_user_login(username,password)
-        self.get_mp_feedback_btn().click
-
-    def get_mp_feedback_btn(self):
-        return self.find_element(self.mp_feedback_loc)
+        self.get_mp_keyword_feedback_btn().click
 
     def turn_to_feedback(self, LoginPage, username, password):
         LoginPage.mp_user_login(username, password)
         self.get_mp_feedback_btn().click()
 
     def get_custom_menu_btn(self):
-        return self.find_element(self.mp_custom_menu_loc)
+
+        return self.find_element(self.get_element_loc("mp_custom_menu_loc"))
 
     def turn_to_custom_menu(self, LoginPage, username, password):
         LoginPage.mp_user_login(username, password)
         self.get_custom_menu_btn().click()
 
     def get_mp_note_btn(self):
-        return self.find_element(self.mp_note_loc)
+
+        return self.find_element(self.get_element_loc("mp_note_loc"))
 
     def turn_to_send_page(self):
         self.get_mp_note_btn().click()
 
     def get_mp_quit_btn(self):
 
-        return self.find_element(self.mp_quict_loc)
+        return self.find_element(self.get_element_loc("mp_quict_loc"))
 
     def mp_login_out(self):
 

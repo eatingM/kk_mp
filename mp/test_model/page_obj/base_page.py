@@ -27,6 +27,7 @@ class Page(object):
         self.timeout = 30
         self.parent = parent
 
+
     def _open(self, url):
         """
         定义页面跳转方法，私有方法
@@ -37,6 +38,10 @@ class Page(object):
         self.driver.get(self.url)
 
         # assert self.on_page(self.url), "Fail to get onto the page!"
+
+    def get_element_loc(self, loc_name):
+
+        return get_page_element(xml_list[1], loc_name)
 
     def find_element(self, loc):
         """
