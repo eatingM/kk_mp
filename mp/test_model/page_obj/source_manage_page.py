@@ -31,8 +31,32 @@ class SourceManagePage(Page):
     mp_single_shown_title_loc = get_page_element(xml_list[1], "mp_single_shown_title_loc")
     mp_single_image_loc = get_page_element(xml_list[1], "mp_single_image_loc")
     mp_single_shown_image_loc = get_page_element(xml_list[1], "mp_single_shown_image_loc")
+    mp_single_image_error_loc = get_page_element(xml_list[1], "mp_single_image_error_loc")
+    mp_single_image_size_error_loc = get_page_element(xml_list[1], "mp_single_image_size_error_loc")
+    mp_single_summary_loc = get_page_element(xml_list[1], "mp_single_summary_loc")
+
 
     # Action
+
+    def get_element_loc(self, loc_name):
+
+        return get_page_element(xml_list[1], loc_name)
+
+    def get_single_shown_summary_text(self):
+
+        return self.find_element(self.get_element_loc("mp_single_shown_summary_loc")).text
+
+    def get_mp_single_summary_input(self):
+
+        return self.find_element(self.mp_single_summary_loc)
+
+    def get_mp_single_image_size_error_hint(self):
+
+        return self.find_element(self.mp_single_image_size_error_loc).text
+
+    def get_mp_single_image_error_hint(self):
+
+        return self.find_element(self.mp_single_image_error_loc).text
 
     def get_mp_single_shown_image_src(self):
 
@@ -216,10 +240,29 @@ class SourceManagePage(Page):
             self.get_mp_single_image_input().send_keys(input_value)
             return flag
         except Exception as e:
-            logger.error("向单图文标题栏输入操作异常！")
+            logger.error("单图文编辑时选择图书时操作异常！")
             logger.error("系统抛出异常！%s" % str(e))
             flag = False
             return flag
+
+    def get_summary_input(self, casenumber):
+        """
+        预置条件：已经到了单图文的编辑界面
+        进行单图文的摘要输入
+        :param casenumber:
+        :return:
+        """
+        flag = True
+        try:
+            input_value = get_input_value(casenumber)
+            self.get_mp_single_summary_input().send_keys(input_value)
+            return flag
+        except Exception as e:
+            logger.error("向单图文摘要栏输入操作异常！")
+            logger.error("系统抛出异常！%s" % str(e))
+            flag = False
+            return flag
+
 
 '''
 @author Mavis

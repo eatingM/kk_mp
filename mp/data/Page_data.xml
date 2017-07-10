@@ -143,7 +143,17 @@
 	<test_case45 title = "用例编号045：mp登录后，进入素材管理的图文界面，添加单图文的图片(jpg).jpg"  input="D:\\PycharmProjects\\kk_mp\\mp\\data\\case45.jpg" value="assets/images/fmdtp.jpg"/>
 	
 	<!--用例编号046：mp首页按钮跳转-用例编号046：mp登录后，进入素材管理的图文界面，添加单图文的图片(log)"-->
-	<test_case46 title = "用例编号046：mp登录后，进入素材管理的图文界面，添加单图文的图片(log).jpg"  input="D:\\PycharmProjects\\kk_mp\\mp\\data\\case46.log" value="assets/images/fmdtp.jpg"/>
+	<test_case46 title = "用例编号046：mp登录后，进入素材管理的图文界面，添加单图文的图片(log).jpg"  input="D:\\PycharmProjects\\kk_mp\\mp\\data\\case46.log" value="不支持所选的文件, 支持的缩略图文件格式有gif,jpg,jpeg,png"/>
+	
+	<!--用例编号047：mp首页按钮跳转-用例编号047：mp登录后，进入素材管理的图文界面，添加单图文的图片(11MBjpg)"-->
+	<test_case47 title = "用例编号047：mp登录后，进入素材管理的图文界面，添加单图文的图片(11MBjpg).jpg"  input="D:\\PycharmProjects\\kk_mp\\mp\\data\\case47.jpg" value="上传文件超过限制"/>
+	
+	<!--用例编号048：mp首页按钮跳转-用例编号048：mp登录后，进入素材管理的图文界面，添加单图文的图片(0kb jpg)"-->
+	<test_case48 title = "用例编号048：mp登录后，进入素材管理的图文界面，添加单图文的图片(0kb jpg).jpg"  input="D:\\PycharmProjects\\kk_mp\\mp\\data\\case48.jpg" value="assets/images/fmdtp.jpg"/>
+	
+	<!--用例编号049：mp首页按钮跳转-用例编号049：mp登录后，进入素材管理的图文界面，添加单图文的摘要(短文字)"-->
+	<test_case49 title = "用例编号049：mp登录后，进入素材管理的图文界面，添加单图文的摘要(短文字).jpg"  input="摘要测试" value="摘要测试"/>
+	
 	
 	</loginPage>
 	

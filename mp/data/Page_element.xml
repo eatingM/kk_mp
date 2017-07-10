@@ -130,6 +130,18 @@
 	<!--mp右侧管理菜单:基础管理-素材管理-单图文编辑界面中的左边显示的图片-->
 	<mp_single_shown_image_loc loc_by = "xpath" loc=".//*[@id='js-twEditor']/div/div[1]/div/div[1]/dl/dt/img"/>
 	
+	<!--mp右侧管理菜单:基础管理-素材管理-单图文编辑界面中的上传错误图片格式后的提示-->
+	<mp_single_image_error_loc loc_by = "xpath" loc="html/body/div[4]/div/table/tbody/tr[2]/td/div"/>
+	
+	<!--mp右侧管理菜单:基础管理-素材管理-单图文编辑界面中的上传超大图片后的提示-->
+	<mp_single_image_size_error_loc loc_by = "xpath" loc="html/body/div[4]/div/table/tbody/tr[2]/td/div"/>
+	
+	<!--mp右侧管理菜单:基础管理-素材管理-单图文编辑界面中的左边显示的摘要内容的提示-->
+	<mp_single_shown_summary_loc loc_by = "xpath" loc=".//*[@id='js-twEditor']/div/div[1]/div/div[1]/dl/dd[2]"/>
+	
+	<!--mp右侧管理菜单:基础管理-素材管理-单图文编辑界面中的左边显示的摘要内容的提示-->
+	<mp_single_summary_loc loc_by = "xpath" loc=".//*[@id='js-desc']/textarea"/>
+	
 	
 	
 	

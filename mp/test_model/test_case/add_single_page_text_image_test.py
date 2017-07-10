@@ -52,10 +52,23 @@ class AddSinglePageTextTitleTest(MyTest):
         logger.info("测试判断:%s 是否不等于:%s" % (SourceManagePage(self.driver).get_mp_single_shown_image_src(), expected_value))
         self.assertNotEqual(SourceManagePage(self.driver).get_mp_single_shown_image_src(), expected_value)
 
-    def test_045_edit_single_title(self):
-        """用例编号046：mp登录后，进入素材管理的图文界面，添加单图文的图片(jpg)"""
+    def test_046_edit_single_title(self):
+        """用例编号046：mp登录后，进入素材管理的图文界面，添加单图文的图片(log)"""
         expected_value = self.add_single_page_text_image("046")
+        error_hint = SourceManagePage(self.driver).get_mp_single_image_error_hint()
+        logger.info("测试判断:%s 是否等于:%s" % (error_hint, expected_value))
+        self.assertEqual(error_hint, expected_value)
 
+    def test_047_edit_single_title(self):
+        """用例编号047：mp登录后，进入素材管理的图文界面，添加单图文的图片(大图片文件)"""
+        expected_value = self.add_single_page_text_image("047")
+        error_hint = SourceManagePage(self.driver).get_mp_single_image_size_error_hint()
+        logger.info("测试判断:%s 是否等于:%s" % (error_hint, expected_value))
+        self.assertEqual(error_hint, expected_value)
+
+    def test_048_edit_single_title(self):
+        """用例编号048：mp登录后，进入素材管理的图文界面，添加单图文的图片(0kb jpg)"""
+        expected_value = self.add_single_page_text_image("048")
         logger.info("测试判断:%s 是否不等于:%s" % (SourceManagePage(self.driver).get_mp_single_shown_image_src(), expected_value))
         self.assertNotEqual(SourceManagePage(self.driver).get_mp_single_shown_image_src(), expected_value)
 
