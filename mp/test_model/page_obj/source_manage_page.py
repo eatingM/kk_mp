@@ -102,6 +102,22 @@ class SourceManagePage(Page):
 
         return self.find_element(self.get_element_loc("mp_add_multi_page_text_loc"))
 
+    def get_mp_text_btn(self):
+
+        return self.find_element(self.get_element_loc("mp_text_btn_loc"))
+
+    def get_mp_edit_text_btn(self):
+
+        return self.find_element(self.get_element_loc("mp_edit_text_btn_loc"))
+
+    def get_mp_edit_text_textarea(self):
+
+        return self.find_element(self.get_element_loc("mp_edit_text_textarea_loc"))
+
+    def get_mp_save_text_btn(self):
+
+        return self.find_element(self.get_element_loc("mp_save_text_btn_loc"))
+
     def get_new_single_page_text_page(self):
         """
         跳转到添加单图文界面
@@ -243,7 +259,52 @@ class SourceManagePage(Page):
             flag = False
             return flag
 
+    def get_text_input(self, case_number):
+        """
 
+        :param case_number:
+        :return:
+        """
+        flag = True
+        try:
+            input_value = get_input_value(case_number)
+            logger.info("点击正文按钮...")
+            self.get_mp_text_btn().click()
+            logger.info("点击编辑正文按钮...")
+            self.get_mp_edit_text_btn().click()
+            logger.info("向正文编辑框输入内容: %s" % input_value)
+            self.get_mp_edit_text_textarea().send_keys(input_value)
+            logger.info("点击保存正文...")
+            self.get_mp_save_text_btn().click()
+            return flag
+        except Exception as e:
+            logger.error("向单图文正文输入框输入操作异常！")
+            logger.error("系统抛出异常！%s" % str(e))
+            flag = False
+            return flag
+
+    def get_exist_text_input(self):
+
+        """
+
+        :return:
+        """
+        flag = True
+        try:
+            logger.info("点击正文按钮...")
+            self.get_mp_text_btn().click()
+            logger.info("点击编辑已有正文按钮...")
+            self.get_mp_edit_text_btn().click()
+
+            exist_value = self.get_mp_edit_text_textarea().text
+            logger.info("获取已有正文的内容: %s" % exist_value)
+            return flag, exist_value
+
+        except Exception as e:
+            logger.error("向单图文正文输入框输入操作异常！")
+            logger.error("系统抛出异常！%s" % str(e))
+            flag = False
+            return flag, exist_value
 '''
 @author Mavis
 

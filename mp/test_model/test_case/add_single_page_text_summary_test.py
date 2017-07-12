@@ -127,6 +127,94 @@ class AddSinglePageTextSummaryTest(MyTest):
         logger.info("测试判断:%s 是否等于:%s" % (actual_value, expected_value))
         self.assertEqual(actual_value, expected_value)
 
+    def test_061_edit_single_title(self):
+        """用例编号061：mp登录后，进入素材管理的图文界面，添加单图文的摘要(120长数字)"""
+        expected_value = self.add_single_page_text_image("061")
+        logger.info("获得的测试用例期望值为： %s" % expected_value)
+        actual_value = SourceManagePage(self.driver).get_single_shown_summary_text()
+        logger.info(("获得的测试用例实际值为： %s" % actual_value))
+        logger.info("测试判断:%s 是否等于:%s" % (actual_value, expected_value))
+        self.assertEqual(actual_value, expected_value)
+
+    def test_062_edit_single_title(self):
+        """用例编号062：mp登录后，进入素材管理的图文界面，添加单图文的摘要(125长数字)"""
+        expected_value = self.add_single_page_text_image("062")
+        logger.info("获得的测试用例期望值为： %s" % expected_value)
+        actual_value = SourceManagePage(self.driver).get_single_shown_summary_text()
+        logger.info(("获得的测试用例实际值为： %s" % actual_value))
+        logger.info("测试判断:%s 是否等于:%s" % (actual_value, expected_value))
+        self.assertEqual(actual_value, expected_value)
+
+    def test_063_edit_single_title(self):
+        """用例编号063：mp登录后，进入素材管理的图文界面，添加单图文的摘要(短组合输入)"""
+        expected_value = self.add_single_page_text_image("063")
+        logger.info("获得的测试用例期望值为： %s" % expected_value)
+        actual_value = SourceManagePage(self.driver).get_single_shown_summary_text()
+        logger.info(("获得的测试用例实际值为： %s" % actual_value))
+        logger.info("测试判断:%s 是否等于:%s" % (actual_value, expected_value))
+        self.assertEqual(actual_value, expected_value)
+
+    def test_064_edit_single_title(self):
+        """用例编号064：mp登录后，进入素材管理的图文界面，添加单图文的摘要(120组合输入)"""
+        expected_value = self.add_single_page_text_image("064")
+        logger.info("获得的测试用例期望值为： %s" % expected_value)
+        actual_value = SourceManagePage(self.driver).get_single_shown_summary_text()
+        logger.info(("获得的测试用例实际值为： %s" % actual_value))
+        logger.info("测试判断:%s 是否等于:%s" % (actual_value, expected_value))
+        self.assertEqual(actual_value, expected_value)
+
+    def test_065_edit_single_title(self):
+        """用例编号065：mp登录后，进入素材管理的图文界面，添加单图文的摘要(125组合输入)"""
+        expected_value = self.add_single_page_text_image("065")
+        logger.info("获得的测试用例期望值为： %s" % expected_value)
+        actual_value = SourceManagePage(self.driver).get_single_shown_summary_text()
+        logger.info(("获得的测试用例实际值为： %s" % actual_value))
+        logger.info("测试判断:%s 是否等于:%s" % (actual_value, expected_value))
+        self.assertEqual(actual_value, expected_value)
+
+    def test_066_edit_single_title(self):
+        """用例编号066：mp登录后，进入素材管理的图文界面，添加单图文的摘要(摘要输入)"""
+        expected_value = self.add_single_page_text_image("066")
+        logger.info("获得的测试用例期望值为： %s" % expected_value)
+        actual_value = SourceManagePage(self.driver).get_single_shown_summary_text()
+        logger.info(("获得的测试用例实际值为： %s" % actual_value))
+        logger.info("测试判断:%s 是否等于:%s" % (actual_value, expected_value))
+        self.assertEqual(actual_value, expected_value)
+
+    def test_067_edit_single_title(self):
+        """用例编号067：mp登录后，进入素材管理的图文界面，添加单图文的标题(删除摘要内容)"""
+        expected_value = self.add_single_page_text_image("067")
+        logger.info("获得的测试用例期望值为： %s" % expected_value)
+        logger.info("输入后，回删输入的内容")
+        SourceManagePage(self.driver).get_mp_single_summary_input().send_keys(Keys.BACKSPACE)
+        actual_value = SourceManagePage(self.driver).get_single_shown_summary_text()
+        logger.info(("获得的测试用例实际值为： %s" % actual_value))
+        logger.info("测试判断:%s 是否等于:%s" % (actual_value, expected_value))
+        self.assertEqual(actual_value, expected_value)
+
+    def test_068_edit_single_title(self):
+        """用例编号068：mp登录后，进入素材管理的图文界面，添加单图文的标题(删空摘要内容)"""
+        expected_value = self.add_single_page_text_image("068")
+        logger.info("获得的测试用例期望值为： %s" % expected_value)
+        logger.info("输入后，回删输入的内容")
+        SourceManagePage(self.driver).get_mp_single_summary_input().send_keys(Keys.BACKSPACE)
+        actual_value = SourceManagePage(self.driver).get_single_shown_summary_text()
+        logger.info(("获得的测试用例实际值为： %s" % actual_value))
+        logger.info("测试判断:%s 是否等于:%s" % (actual_value, expected_value))
+        self.assertEqual(actual_value, expected_value)
+
+    def test_069_edit_single_title(self):
+        """用例编号069：mp登录后，进入素材管理的图文界面，添加单图文的标题(更新摘要内容)"""
+        expected_value = self.add_single_page_text_image("069")
+        logger.info("获得的测试用例期望值为： %s" % expected_value)
+        logger.info("输入后，回删输入的内容")
+        SourceManagePage(self.driver).get_mp_single_summary_input().send_keys(Keys.BACKSPACE)
+        input_value = get_input_value("069")
+        SourceManagePage(self.driver).get_mp_single_summary_input().send_keys(input_value)
+        actual_value = SourceManagePage(self.driver).get_single_shown_summary_text()
+        logger.info(("获得的测试用例实际值为： %s" % actual_value))
+        logger.info("测试判断:%s 是否等于:%s" % (actual_value, expected_value))
+        self.assertEqual(actual_value, expected_value)
 
 '''
 @author Mavis

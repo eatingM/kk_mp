@@ -142,6 +142,20 @@
 	<!--mp右侧管理菜单:基础管理-素材管理-单图文编辑界面中的左边显示的摘要内容的提示-->
 	<mp_single_summary_loc loc_by = "xpath" loc=".//*[@id='js-desc']/textarea"/>
 	
+	<!--mp右侧管理菜单:基础管理-素材管理-单图文编辑界面中的左边显示的正文编辑按钮-->
+	<mp_text_btn_loc loc_by = "xpath" loc=".//*[@id='url-radio']/label[1]"/>
+	
+	<!--mp右侧管理菜单:基础管理-素材管理-单图文编辑界面中的左边显示的创建正文按钮-->
+	<mp_edit_text_btn_loc loc_by = "xpath" loc=".//*[@id='js-open-editor']"/>
+	
+	<!--mp右侧管理菜单:基础管理-素材管理-单图文编辑界面中的左边显示的正文编辑输入框-->
+	<mp_edit_text_textarea_loc loc_by = "class" loc="wangEditor-txt"/>
+	
+	
+	<!--mp右侧管理菜单:基础管理-素材管理-单图文编辑界面中的左边显示的正文编辑保存按钮-->
+	<mp_save_text_btn_loc loc_by = "xpath" loc="html/body/div[4]/div/table/tbody/tr[3]/td/div[2]/button[2]"/>
+	
+	
 	
 	
 	
